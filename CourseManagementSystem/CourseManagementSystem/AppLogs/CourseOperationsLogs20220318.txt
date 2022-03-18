@@ -1,0 +1,928 @@
+2022-03-18T00:18:54.9783169+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-18T00:18:54.9834843+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-18T00:18:54.9848535+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-18T00:18:54.9859563+05:30  [INF] Content root path: "C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem" (b5d60022)
+2022-03-18T00:18:56.1018726+05:30 0HMG88R4TAU9K:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-18T00:18:56.2740418+05:30 0HMG88R4TAU9K:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 180.1039ms (791a596a)
+2022-03-18T00:18:56.4130553+05:30 0HMG88R4TAU9K:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-18T00:18:56.5623314+05:30 0HMG88R4TAU9K:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 112.3669ms (791a596a)
+2022-03-18T00:20:08.1990162+05:30 0HMG88R4TAU9L:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/CourseRegistered/Registration application/json 96 (ca22a1cb)
+2022-03-18T00:20:08.2377990+05:30 0HMG88R4TAU9L:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Registration (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:20:08.2712356+05:30 0HMG88R4TAU9L:00000002 [INF] Route matched with "{action = \"Registration\", controller = \"CourseRegistered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Registration(CourseManagementSystem.DomainLayer.Registration)" on controller "CourseManagementSystem.Controllers.CourseRegistered" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:20:08.4237935+05:30 0HMG88R4TAU9L:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T00:20:08.4534381+05:30 0HMG88R4TAU9L:00000002 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2022-03-18T00:20:08.4704054+05:30 0HMG88R4TAU9L:00000002 [INF] Executed action "CourseManagementSystem.Controllers.CourseRegistered.Registration (CourseManagementSystem)" in 194.4592ms (afa2e885)
+2022-03-18T00:20:08.4704818+05:30 0HMG88R4TAU9L:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Registration (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:20:08.4713367+05:30 0HMG88R4TAU9L:00000002 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/CourseRegistered/Registration application/json 96 - 400 - application/problem+json;+charset=utf-8 272.3545ms (791a596a)
+2022-03-18T00:20:29.6969201+05:30 0HMG88R4TAU9M:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/CourseRegistered/Registration application/json 74 (ca22a1cb)
+2022-03-18T00:20:29.6988894+05:30 0HMG88R4TAU9M:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Registration (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:20:29.6991390+05:30 0HMG88R4TAU9M:00000002 [INF] Route matched with "{action = \"Registration\", controller = \"CourseRegistered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Registration(CourseManagementSystem.DomainLayer.Registration)" on controller "CourseManagementSystem.Controllers.CourseRegistered" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:20:29.7015716+05:30 0HMG88R4TAU9M:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T00:20:29.7313320+05:30 0HMG88R4TAU9M:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:20:30.1113936+05:30 0HMG88R4TAU9M:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:20:30.6233703+05:30 0HMG88R4TAU9M:00000002 [INF] Executed DbCommand ("25"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [register] ([Registration_Id], [Course_Id], [Course_StartDate], [student_ID])
+VALUES (@p0, @p1, @p2, @p3);" (0723d8ff)
+2022-03-18T00:20:30.6413037+05:30 0HMG88R4TAU9M:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-18T00:20:30.6414682+05:30 0HMG88R4TAU9M:00000002 [INF] Executed action "CourseManagementSystem.Controllers.CourseRegistered.Registration (CourseManagementSystem)" in 942.2969ms (afa2e885)
+2022-03-18T00:20:30.6414922+05:30 0HMG88R4TAU9M:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Registration (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:20:30.6435263+05:30 0HMG88R4TAU9M:00000002 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/CourseRegistered/Registration application/json 74 - 200 - text/plain;+charset=utf-8 946.6101ms (791a596a)
+2022-03-18T00:20:37.7238641+05:30 0HMG88R4TAU9N:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/CourseRegistered/AllCourse - - (ca22a1cb)
+2022-03-18T00:20:37.7243702+05:30 0HMG88R4TAU9N:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:20:37.7258021+05:30 0HMG88R4TAU9N:00000002 [INF] Route matched with "{action = \"AllCourse\", controller = \"CourseRegistered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.CourseRegistered" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:20:37.7301247+05:30 0HMG88R4TAU9N:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T00:20:37.7324929+05:30 0HMG88R4TAU9N:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:20:37.7698937+05:30 0HMG88R4TAU9N:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:20:37.9667942+05:30 0HMG88R4TAU9N:00000002 [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Student_Name] AS [Name], [s].[Email] AS [email], [c].[Course_Name] AS [courseName], [c].[Course_Duration] AS [courseDuration], [r].[Course_StartDate] AS [start_Date]
+FROM [register] AS [r]
+INNER JOIN [courses] AS [c] ON [r].[Course_Id] = [c].[Course_Id]
+INNER JOIN [students] AS [s] ON [r].[student_ID] = [s].[student_Id]" (0723d8ff)
+2022-03-18T00:20:37.9743677+05:30 0HMG88R4TAU9N:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.RegisteredStudentList, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T00:20:37.9769710+05:30 0HMG88R4TAU9N:00000002 [INF] Executed action "CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)" in 251.0842ms (afa2e885)
+2022-03-18T00:20:37.9769965+05:30 0HMG88R4TAU9N:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:20:37.9770875+05:30 0HMG88R4TAU9N:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/CourseRegistered/AllCourse - - - 200 - application/json;+charset=utf-8 253.2474ms (791a596a)
+2022-03-18T00:26:38.6345218+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-18T00:26:38.6381629+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-18T00:26:38.6391806+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-18T00:26:38.6402250+05:30  [INF] Content root path: "C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem" (b5d60022)
+2022-03-18T00:26:39.3866037+05:30 0HMG88VF12392:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-18T00:26:39.5021656+05:30 0HMG88VF12392:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 118.6350ms (791a596a)
+2022-03-18T00:26:39.6344230+05:30 0HMG88VF12392:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-18T00:26:39.7125266+05:30 0HMG88VF12392:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 71.7816ms (791a596a)
+2022-03-18T00:26:46.5000385+05:30 0HMG88VF12393:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/CourseRegistered/AllCourse - - (ca22a1cb)
+2022-03-18T00:26:46.5285292+05:30 0HMG88VF12393:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:26:46.5511463+05:30 0HMG88VF12393:00000002 [INF] Route matched with "{action = \"AllCourse\", controller = \"CourseRegistered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.CourseRegistered" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:26:46.6501962+05:30 0HMG88VF12393:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T00:26:46.6520660+05:30 0HMG88VF12393:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:26:46.9678411+05:30 0HMG88VF12393:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:26:47.4549837+05:30 0HMG88VF12393:00000002 [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Registration_Id] AS [registered_id], [s].[Student_Name] AS [Name], [s].[Email] AS [email], [c].[Course_Name] AS [courseName], [c].[Course_Duration] AS [courseDuration], [r].[Course_StartDate] AS [start_Date]
+FROM [register] AS [r]
+INNER JOIN [courses] AS [c] ON [r].[Course_Id] = [c].[Course_Id]
+INNER JOIN [students] AS [s] ON [r].[student_ID] = [s].[student_Id]" (0723d8ff)
+2022-03-18T00:26:47.4744798+05:30 0HMG88VF12393:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.RegisteredStudentList, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T00:26:47.4860025+05:30 0HMG88VF12393:00000002 [INF] Executed action "CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)" in 931.1216ms (afa2e885)
+2022-03-18T00:26:47.4860694+05:30 0HMG88VF12393:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:26:47.4889015+05:30 0HMG88VF12393:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/CourseRegistered/AllCourse - - - 200 - application/json;+charset=utf-8 988.8493ms (791a596a)
+2022-03-18T00:34:39.3975869+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-18T00:34:39.4014140+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-18T00:34:39.4027558+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-18T00:34:39.4038276+05:30  [INF] Content root path: "C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem" (b5d60022)
+2022-03-18T00:34:40.1654369+05:30 0HMG893UAT7VK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-18T00:34:40.2703300+05:30 0HMG893UAT7VK:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 107.6055ms (791a596a)
+2022-03-18T00:34:40.3991669+05:30 0HMG893UAT7VK:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-18T00:34:40.4880529+05:30 0HMG893UAT7VK:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 88.8233ms (791a596a)
+2022-03-18T00:34:48.6622694+05:30 0HMG893UAT7VL:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Course/AddCourse application/json 124 (ca22a1cb)
+2022-03-18T00:34:48.6890370+05:30 0HMG893UAT7VL:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseController.AddCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:34:48.7166337+05:30 0HMG893UAT7VL:00000002 [INF] Route matched with "{action = \"AddCourse\", controller = \"Course\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AddCourse(CourseManagementSystem.DomainLayer.Course)" on controller "CourseManagementSystem.Controllers.CourseController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:34:48.8221487+05:30 0HMG893UAT7VL:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T00:34:48.8497249+05:30 0HMG893UAT7VL:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:34:49.1843412+05:30 0HMG893UAT7VL:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:34:49.6742762+05:30 0HMG893UAT7VL:00000002 [INF] Executed DbCommand ("41"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [courses] ([Course_Id], [Course_Description], [Course_Duration], [Course_Instructor], [Course_Name])
+VALUES (@p0, @p1, @p2, @p3, @p4);" (0723d8ff)
+2022-03-18T00:34:49.7037223+05:30 0HMG893UAT7VL:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-18T00:34:49.7077667+05:30 0HMG893UAT7VL:00000002 [INF] Executed action "CourseManagementSystem.Controllers.CourseController.AddCourse (CourseManagementSystem)" in 987.4108ms (afa2e885)
+2022-03-18T00:34:49.7078328+05:30 0HMG893UAT7VL:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseController.AddCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:34:49.7101947+05:30 0HMG893UAT7VL:00000002 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Course/AddCourse application/json 124 - 200 - text/plain;+charset=utf-8 1047.9910ms (791a596a)
+2022-03-18T00:34:55.7798262+05:30 0HMG893UAT7VM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Course/AllCourse - - (ca22a1cb)
+2022-03-18T00:34:55.7826667+05:30 0HMG893UAT7VM:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseController.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:34:55.7840947+05:30 0HMG893UAT7VM:00000002 [INF] Route matched with "{action = \"AllCourse\", controller = \"Course\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.CourseController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:34:55.7856365+05:30 0HMG893UAT7VM:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T00:34:55.7871801+05:30 0HMG893UAT7VM:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:34:55.8084444+05:30 0HMG893UAT7VM:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:34:55.9595941+05:30 0HMG893UAT7VM:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Course_Id], [c].[Course_Description], [c].[Course_Duration], [c].[Course_Instructor], [c].[Course_Name]
+FROM [courses] AS [c]" (0723d8ff)
+2022-03-18T00:34:55.9687460+05:30 0HMG893UAT7VM:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.Course, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T00:34:55.9747093+05:30 0HMG893UAT7VM:00000002 [INF] Executed action "CourseManagementSystem.Controllers.CourseController.AllCourse (CourseManagementSystem)" in 190.5556ms (afa2e885)
+2022-03-18T00:34:55.9747749+05:30 0HMG893UAT7VM:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseController.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:34:55.9748980+05:30 0HMG893UAT7VM:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Course/AllCourse - - - 200 - application/json;+charset=utf-8 195.0705ms (791a596a)
+2022-03-18T00:35:06.2826899+05:30 0HMG893UAT7VN:00000002 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/Course/DeleteCourse/id?id=4 - - (ca22a1cb)
+2022-03-18T00:35:06.2830051+05:30 0HMG893UAT7VN:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseController.DeleteCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:35:06.2865883+05:30 0HMG893UAT7VN:00000002 [INF] Route matched with "{action = \"DeleteCourse\", controller = \"Course\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult DeleteCourse(Int32)" on controller "CourseManagementSystem.Controllers.CourseController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:35:06.2919580+05:30 0HMG893UAT7VN:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T00:35:06.2975021+05:30 0HMG893UAT7VN:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:35:06.3036302+05:30 0HMG893UAT7VN:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:35:06.3640907+05:30 0HMG893UAT7VN:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Course_Id], [c].[Course_Description], [c].[Course_Duration], [c].[Course_Instructor], [c].[Course_Name]
+FROM [courses] AS [c]
+WHERE [c].[Course_Id] = @__p_0" (0723d8ff)
+2022-03-18T00:35:06.3707577+05:30 0HMG893UAT7VN:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [courses]
+WHERE [Course_Id] = @p0;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-03-18T00:35:06.3759733+05:30 0HMG893UAT7VN:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-18T00:35:06.3761752+05:30 0HMG893UAT7VN:00000002 [INF] Executed action "CourseManagementSystem.Controllers.CourseController.DeleteCourse (CourseManagementSystem)" in 89.5185ms (afa2e885)
+2022-03-18T00:35:06.3762500+05:30 0HMG893UAT7VN:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseController.DeleteCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:35:06.3763530+05:30 0HMG893UAT7VN:00000002 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/Course/DeleteCourse/id?id=4 - - - 200 - text/plain;+charset=utf-8 93.6652ms (791a596a)
+2022-03-18T00:35:10.0803883+05:30 0HMG893UAT7VN:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Course/AllCourse - - (ca22a1cb)
+2022-03-18T00:35:10.0806031+05:30 0HMG893UAT7VN:00000003 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseController.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:35:10.0807545+05:30 0HMG893UAT7VN:00000003 [INF] Route matched with "{action = \"AllCourse\", controller = \"Course\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.CourseController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:35:10.0825768+05:30 0HMG893UAT7VN:00000003 [INF] Course class called (4e8a56dc)
+2022-03-18T00:35:10.0847526+05:30 0HMG893UAT7VN:00000003 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:35:10.0852651+05:30 0HMG893UAT7VN:00000003 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:35:10.0881696+05:30 0HMG893UAT7VN:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Course_Id], [c].[Course_Description], [c].[Course_Duration], [c].[Course_Instructor], [c].[Course_Name]
+FROM [courses] AS [c]" (0723d8ff)
+2022-03-18T00:35:10.0887115+05:30 0HMG893UAT7VN:00000003 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.Course, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T00:35:10.0897450+05:30 0HMG893UAT7VN:00000003 [INF] Executed action "CourseManagementSystem.Controllers.CourseController.AllCourse (CourseManagementSystem)" in 8.8748ms (afa2e885)
+2022-03-18T00:35:10.0899048+05:30 0HMG893UAT7VN:00000003 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseController.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:35:10.0903730+05:30 0HMG893UAT7VN:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Course/AllCourse - - - 200 - application/json;+charset=utf-8 9.8067ms (791a596a)
+2022-03-18T00:37:45.1848459+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-18T00:37:45.1885831+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-18T00:37:45.1897133+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-18T00:37:45.1906641+05:30  [INF] Content root path: "C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem" (b5d60022)
+2022-03-18T00:37:45.8446356+05:30 0HMG895LLFPK4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-18T00:37:45.9395015+05:30 0HMG895LLFPK4:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 97.7645ms (791a596a)
+2022-03-18T00:37:46.0602166+05:30 0HMG895LLFPK4:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-18T00:37:46.1672793+05:30 0HMG895LLFPK4:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 106.9624ms (791a596a)
+2022-03-18T00:38:13.9900495+05:30 0HMG895LLFPK6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/CourseRegistered/AllCourse - - (ca22a1cb)
+2022-03-18T00:38:14.0212286+05:30 0HMG895LLFPK6:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:38:14.0413571+05:30 0HMG895LLFPK6:00000002 [INF] Route matched with "{action = \"AllCourse\", controller = \"CourseRegistered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.CourseRegistered" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:38:14.1626155+05:30 0HMG895LLFPK6:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T00:38:14.1644772+05:30 0HMG895LLFPK6:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:38:14.5169519+05:30 0HMG895LLFPK6:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:38:14.9640878+05:30 0HMG895LLFPK6:00000002 [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Registration_Id] AS [registered_id], [s].[Student_Name] AS [Name], [s].[Email] AS [email], [c].[Course_Name] AS [courseName], [c].[Course_Duration] AS [courseDuration], [r].[Course_StartDate] AS [start_Date]
+FROM [register] AS [r]
+INNER JOIN [courses] AS [c] ON [r].[Course_Id] = [c].[Course_Id]
+INNER JOIN [students] AS [s] ON [r].[student_ID] = [s].[student_Id]" (0723d8ff)
+2022-03-18T00:38:14.9839078+05:30 0HMG895LLFPK6:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.RegisteredStudentList, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T00:38:14.9978147+05:30 0HMG895LLFPK6:00000002 [INF] Executed action "CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)" in 948.5353ms (afa2e885)
+2022-03-18T00:38:14.9979082+05:30 0HMG895LLFPK6:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:38:15.0010714+05:30 0HMG895LLFPK6:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/CourseRegistered/AllCourse - - - 200 - application/json;+charset=utf-8 1011.0260ms (791a596a)
+2022-03-18T00:38:48.7873783+05:30 0HMG895LLFPK7:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/CourseRegistered/Registration application/json 74 (ca22a1cb)
+2022-03-18T00:38:48.7909048+05:30 0HMG895LLFPK7:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Registration (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:38:48.8006314+05:30 0HMG895LLFPK7:00000002 [INF] Route matched with "{action = \"Registration\", controller = \"CourseRegistered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Registration(CourseManagementSystem.DomainLayer.Registration)" on controller "CourseManagementSystem.Controllers.CourseRegistered" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:38:48.8106421+05:30 0HMG895LLFPK7:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T00:38:48.8273708+05:30 0HMG895LLFPK7:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:38:48.8492286+05:30 0HMG895LLFPK7:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:38:48.9596354+05:30 0HMG895LLFPK7:00000002 [INF] Executed DbCommand ("25"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [register] ([Registration_Id], [Course_Id], [Course_StartDate], [student_ID])
+VALUES (@p0, @p1, @p2, @p3);" (0723d8ff)
+2022-03-18T00:38:48.9669115+05:30 0HMG895LLFPK7:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-18T00:38:48.9670569+05:30 0HMG895LLFPK7:00000002 [INF] Executed action "CourseManagementSystem.Controllers.CourseRegistered.Registration (CourseManagementSystem)" in 166.3736ms (afa2e885)
+2022-03-18T00:38:48.9670846+05:30 0HMG895LLFPK7:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Registration (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:38:48.9671635+05:30 0HMG895LLFPK7:00000002 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/CourseRegistered/Registration application/json 74 - 200 - text/plain;+charset=utf-8 179.8961ms (791a596a)
+2022-03-18T00:38:55.8662345+05:30 0HMG895LLFPK7:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/CourseRegistered/AllCourse - - (ca22a1cb)
+2022-03-18T00:38:55.8664513+05:30 0HMG895LLFPK7:00000003 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:38:55.8666020+05:30 0HMG895LLFPK7:00000003 [INF] Route matched with "{action = \"AllCourse\", controller = \"CourseRegistered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.CourseRegistered" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:38:55.8705402+05:30 0HMG895LLFPK7:00000003 [INF] Course class called (4e8a56dc)
+2022-03-18T00:38:55.8725029+05:30 0HMG895LLFPK7:00000003 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:38:55.8807934+05:30 0HMG895LLFPK7:00000003 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:38:55.8864366+05:30 0HMG895LLFPK7:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Registration_Id] AS [registered_id], [s].[Student_Name] AS [Name], [s].[Email] AS [email], [c].[Course_Name] AS [courseName], [c].[Course_Duration] AS [courseDuration], [r].[Course_StartDate] AS [start_Date]
+FROM [register] AS [r]
+INNER JOIN [courses] AS [c] ON [r].[Course_Id] = [c].[Course_Id]
+INNER JOIN [students] AS [s] ON [r].[student_ID] = [s].[student_Id]" (0723d8ff)
+2022-03-18T00:38:55.8866320+05:30 0HMG895LLFPK7:00000003 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.RegisteredStudentList, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T00:38:55.8868108+05:30 0HMG895LLFPK7:00000003 [INF] Executed action "CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)" in 20.1861ms (afa2e885)
+2022-03-18T00:38:55.8868351+05:30 0HMG895LLFPK7:00000003 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:38:55.8869100+05:30 0HMG895LLFPK7:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/CourseRegistered/AllCourse - - - 200 - application/json;+charset=utf-8 20.6950ms (791a596a)
+2022-03-18T00:39:10.7276502+05:30 0HMG895LLFPK8:00000002 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/CourseRegistered/Unregistered/id?id=2 - - (ca22a1cb)
+2022-03-18T00:39:10.7280979+05:30 0HMG895LLFPK8:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Unregistered (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:39:10.7312747+05:30 0HMG895LLFPK8:00000002 [INF] Route matched with "{action = \"Unregistered\", controller = \"CourseRegistered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Unregistered(Int32)" on controller "CourseManagementSystem.Controllers.CourseRegistered" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:39:10.7349925+05:30 0HMG895LLFPK8:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T00:39:10.7409309+05:30 0HMG895LLFPK8:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:39:10.7416459+05:30 0HMG895LLFPK8:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:39:10.8529483+05:30 0HMG895LLFPK8:00000002 [ERR] Exception Detail : (3dfdc342)
+2022-03-18T00:39:10.8538989+05:30 0HMG895LLFPK8:00000002 [INF] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'. (605b4265)
+2022-03-18T00:39:10.8570871+05:30 0HMG895LLFPK8:00000002 [INF] Executed action "CourseManagementSystem.Controllers.CourseRegistered.Unregistered (CourseManagementSystem)" in 125.7354ms (afa2e885)
+2022-03-18T00:39:10.8571272+05:30 0HMG895LLFPK8:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Unregistered (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:39:10.8572305+05:30 0HMG895LLFPK8:00000002 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/CourseRegistered/Unregistered/id?id=2 - - - 400 - application/problem+json;+charset=utf-8 129.6191ms (791a596a)
+2022-03-18T00:39:29.4658480+05:30 0HMG895LLFPK9:00000002 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/CourseRegistered/Unregistered/id?id=1 - - (ca22a1cb)
+2022-03-18T00:39:29.4660294+05:30 0HMG895LLFPK9:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Unregistered (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:39:29.4661706+05:30 0HMG895LLFPK9:00000002 [INF] Route matched with "{action = \"Unregistered\", controller = \"CourseRegistered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Unregistered(Int32)" on controller "CourseManagementSystem.Controllers.CourseRegistered" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:39:29.4701350+05:30 0HMG895LLFPK9:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T00:39:29.4742457+05:30 0HMG895LLFPK9:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:39:29.4752138+05:30 0HMG895LLFPK9:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:39:29.5001479+05:30 0HMG895LLFPK9:00000002 [ERR] Exception Detail : (3dfdc342)
+2022-03-18T00:39:29.5003221+05:30 0HMG895LLFPK9:00000002 [INF] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'. (605b4265)
+2022-03-18T00:39:29.5004313+05:30 0HMG895LLFPK9:00000002 [INF] Executed action "CourseManagementSystem.Controllers.CourseRegistered.Unregistered (CourseManagementSystem)" in 34.2262ms (afa2e885)
+2022-03-18T00:39:29.5004540+05:30 0HMG895LLFPK9:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Unregistered (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:39:29.5005265+05:30 0HMG895LLFPK9:00000002 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/CourseRegistered/Unregistered/id?id=1 - - - 400 - application/problem+json;+charset=utf-8 34.7120ms (791a596a)
+2022-03-18T00:42:43.4652293+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-18T00:42:43.4688666+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-18T00:42:43.4699476+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-18T00:42:43.4708760+05:30  [INF] Content root path: "C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem" (b5d60022)
+2022-03-18T00:42:44.1561331+05:30 0HMG898EINIOK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-18T00:42:44.2415840+05:30 0HMG898EINIOK:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 89.0762ms (791a596a)
+2022-03-18T00:42:44.3593977+05:30 0HMG898EINIOK:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-18T00:42:44.4486380+05:30 0HMG898EINIOK:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 89.1957ms (791a596a)
+2022-03-18T00:42:53.3708085+05:30 0HMG898EINIOK:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/CourseRegistered/AllCourse - - (ca22a1cb)
+2022-03-18T00:42:53.3955576+05:30 0HMG898EINIOK:00000004 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:42:53.4171783+05:30 0HMG898EINIOK:00000004 [INF] Route matched with "{action = \"AllCourse\", controller = \"CourseRegistered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.CourseRegistered" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:42:53.5223668+05:30 0HMG898EINIOK:00000004 [INF] Course class called (4e8a56dc)
+2022-03-18T00:42:53.5242020+05:30 0HMG898EINIOK:00000004 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:42:53.8364679+05:30 0HMG898EINIOK:00000004 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:42:54.2942426+05:30 0HMG898EINIOK:00000004 [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Registration_Id] AS [registered_id], [s].[Student_Name] AS [Name], [s].[Email] AS [email], [c].[Course_Name] AS [courseName], [c].[Course_Duration] AS [courseDuration], [r].[Course_StartDate] AS [start_Date]
+FROM [register] AS [r]
+INNER JOIN [courses] AS [c] ON [r].[Course_Id] = [c].[Course_Id]
+INNER JOIN [students] AS [s] ON [r].[student_ID] = [s].[student_Id]" (0723d8ff)
+2022-03-18T00:42:54.3134869+05:30 0HMG898EINIOK:00000004 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.RegisteredStudentList, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T00:42:54.3251847+05:30 0HMG898EINIOK:00000004 [INF] Executed action "CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)" in 904.3593ms (afa2e885)
+2022-03-18T00:42:54.3252582+05:30 0HMG898EINIOK:00000004 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:42:54.3274994+05:30 0HMG898EINIOK:00000004 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/CourseRegistered/AllCourse - - - 200 - application/json;+charset=utf-8 956.6999ms (791a596a)
+2022-03-18T00:43:31.6541468+05:30 0HMG898EINIOK:00000005 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/CourseRegistered/Unregistered/id?email=tushar%40gmail.com - - (ca22a1cb)
+2022-03-18T00:43:31.6566647+05:30 0HMG898EINIOK:00000005 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Unregistered (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:43:31.6668008+05:30 0HMG898EINIOK:00000005 [INF] Route matched with "{action = \"Unregistered\", controller = \"CourseRegistered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Unregistered(System.String)" on controller "CourseManagementSystem.Controllers.CourseRegistered" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:43:31.6754954+05:30 0HMG898EINIOK:00000005 [INF] Course class called (4e8a56dc)
+2022-03-18T00:43:31.6862768+05:30 0HMG898EINIOK:00000005 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:43:31.7045306+05:30 0HMG898EINIOK:00000005 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:43:31.7570196+05:30 0HMG898EINIOK:00000005 [ERR] Exception Detail : (3dfdc342)
+2022-03-18T00:43:31.7575346+05:30 0HMG898EINIOK:00000005 [INF] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'. (605b4265)
+2022-03-18T00:43:31.7606808+05:30 0HMG898EINIOK:00000005 [INF] Executed action "CourseManagementSystem.Controllers.CourseRegistered.Unregistered (CourseManagementSystem)" in 93.8296ms (afa2e885)
+2022-03-18T00:43:31.7607123+05:30 0HMG898EINIOK:00000005 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Unregistered (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:43:31.7607982+05:30 0HMG898EINIOK:00000005 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/CourseRegistered/Unregistered/id?email=tushar%40gmail.com - - - 400 - application/problem+json;+charset=utf-8 106.6564ms (791a596a)
+2022-03-18T00:45:25.9991460+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-18T00:45:26.0028857+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-18T00:45:26.0039196+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-18T00:45:26.0049561+05:30  [INF] Content root path: "C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem" (b5d60022)
+2022-03-18T00:45:26.7773744+05:30 0HMG899V1PO21:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-18T00:45:26.8652646+05:30 0HMG899V1PO21:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 91.3014ms (791a596a)
+2022-03-18T00:45:26.9857221+05:30 0HMG899V1PO21:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-18T00:45:27.0783651+05:30 0HMG899V1PO21:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 92.6034ms (791a596a)
+2022-03-18T00:45:35.4185475+05:30 0HMG899V1PO21:00000004 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/CourseRegistered/Unregistered/id?email=tushar%40gmail.com - - (ca22a1cb)
+2022-03-18T00:45:35.4524374+05:30 0HMG899V1PO21:00000004 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Unregistered (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:45:35.4833549+05:30 0HMG899V1PO21:00000004 [INF] Route matched with "{action = \"Unregistered\", controller = \"CourseRegistered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Unregistered(System.String)" on controller "CourseManagementSystem.Controllers.CourseRegistered" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:45:35.5839968+05:30 0HMG899V1PO21:00000004 [INF] Course class called (4e8a56dc)
+2022-03-18T00:45:35.5949687+05:30 0HMG899V1PO21:00000004 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:45:35.9204389+05:30 0HMG899V1PO21:00000004 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:45:35.9661607+05:30 0HMG899V1PO21:00000004 [ERR] Exception Detail : (3dfdc342)
+2022-03-18T00:45:35.9707408+05:30 0HMG899V1PO21:00000004 [INF] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'. (605b4265)
+2022-03-18T00:45:35.9837347+05:30 0HMG899V1PO21:00000004 [INF] Executed action "CourseManagementSystem.Controllers.CourseRegistered.Unregistered (CourseManagementSystem)" in 495.4783ms (afa2e885)
+2022-03-18T00:45:35.9838338+05:30 0HMG899V1PO21:00000004 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Unregistered (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:45:35.9873580+05:30 0HMG899V1PO21:00000004 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/CourseRegistered/Unregistered/id?email=tushar%40gmail.com - - - 400 - application/problem+json;+charset=utf-8 568.8241ms (791a596a)
+2022-03-18T00:45:44.3109051+05:30 0HMG899V1PO21:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/CourseRegistered/AllCourse - - (ca22a1cb)
+2022-03-18T00:45:44.3144959+05:30 0HMG899V1PO21:00000005 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:45:44.3163595+05:30 0HMG899V1PO21:00000005 [INF] Route matched with "{action = \"AllCourse\", controller = \"CourseRegistered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.CourseRegistered" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:45:44.3194836+05:30 0HMG899V1PO21:00000005 [INF] Course class called (4e8a56dc)
+2022-03-18T00:45:44.3214617+05:30 0HMG899V1PO21:00000005 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:45:44.3485744+05:30 0HMG899V1PO21:00000005 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:45:44.7765119+05:30 0HMG899V1PO21:00000005 [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Registration_Id] AS [registered_id], [s].[Student_Name] AS [Name], [s].[Email] AS [email], [c].[Course_Name] AS [courseName], [c].[Course_Duration] AS [courseDuration], [r].[Course_StartDate] AS [start_Date]
+FROM [register] AS [r]
+INNER JOIN [courses] AS [c] ON [r].[Course_Id] = [c].[Course_Id]
+INNER JOIN [students] AS [s] ON [r].[student_ID] = [s].[student_Id]" (0723d8ff)
+2022-03-18T00:45:44.7915616+05:30 0HMG899V1PO21:00000005 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.RegisteredStudentList, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T00:45:44.7942111+05:30 0HMG899V1PO21:00000005 [INF] Executed action "CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)" in 477.8053ms (afa2e885)
+2022-03-18T00:45:44.7942662+05:30 0HMG899V1PO21:00000005 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:45:44.7946189+05:30 0HMG899V1PO21:00000005 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/CourseRegistered/AllCourse - - - 200 - application/json;+charset=utf-8 483.7314ms (791a596a)
+2022-03-18T00:47:42.0210411+05:30  [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:48:01.9270026+05:30  [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:48:02.1168533+05:30  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2022-03-18T00:48:02.1436829+05:30  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2022-03-18T00:48:02.1458084+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2022-03-18T00:48:02.1461797+05:30  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2022-03-18T00:48:02.1591551+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2022-03-18T00:48:02.1704997+05:30  [INF] Applying migration '"20220317191742_registerstudent"'. (0e2ac64d)
+2022-03-18T00:48:02.2012511+05:30  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [registerstudent] (
+    [registered_id] int NOT NULL,
+    [Name] nvarchar(max) NULL,
+    [email] nvarchar(max) NULL,
+    [courseName] nvarchar(max) NULL,
+    [courseDuration] nvarchar(max) NULL,
+    [start_Date] int NOT NULL,
+    CONSTRAINT [PK_registerstudent] PRIMARY KEY ([registered_id])
+);" (0723d8ff)
+2022-03-18T00:48:02.2027248+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20220317191742_registerstudent', N'5.0.15');" (0723d8ff)
+2022-03-18T00:48:07.8109868+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-18T00:48:07.8177699+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-18T00:48:07.8197549+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-18T00:48:07.8217064+05:30  [INF] Content root path: "C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem" (b5d60022)
+2022-03-18T00:48:08.3928682+05:30 0HMG89BF700LM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-18T00:48:08.4898399+05:30 0HMG89BF700LM:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 97.4046ms (791a596a)
+2022-03-18T00:48:08.5987133+05:30 0HMG89BF700LM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-18T00:48:08.6933017+05:30 0HMG89BF700LM:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 94.4928ms (791a596a)
+2022-03-18T00:48:22.0624742+05:30 0HMG89BF700LO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/CourseRegistered/AllCourse - - (ca22a1cb)
+2022-03-18T00:48:22.0953408+05:30 0HMG89BF700LO:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:48:22.1152152+05:30 0HMG89BF700LO:00000002 [INF] Route matched with "{action = \"AllCourse\", controller = \"CourseRegistered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.CourseRegistered" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:48:22.2201121+05:30 0HMG89BF700LO:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T00:48:22.2223843+05:30 0HMG89BF700LO:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:48:22.5715202+05:30 0HMG89BF700LO:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:48:23.1060230+05:30 0HMG89BF700LO:00000002 [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Registration_Id] AS [registered_id], [s].[Student_Name] AS [Name], [s].[Email] AS [email], [c].[Course_Name] AS [courseName], [c].[Course_Duration] AS [courseDuration], [r].[Course_StartDate] AS [start_Date]
+FROM [register] AS [r]
+INNER JOIN [courses] AS [c] ON [r].[Course_Id] = [c].[Course_Id]
+INNER JOIN [students] AS [s] ON [r].[student_ID] = [s].[student_Id]" (0723d8ff)
+2022-03-18T00:48:23.1286514+05:30 0HMG89BF700LO:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.RegisteredStudentList, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T00:48:23.1388154+05:30 0HMG89BF700LO:00000002 [INF] Executed action "CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)" in 1019.6471ms (afa2e885)
+2022-03-18T00:48:23.1388854+05:30 0HMG89BF700LO:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:48:23.1432482+05:30 0HMG89BF700LO:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/CourseRegistered/AllCourse - - - 200 - application/json;+charset=utf-8 1080.8325ms (791a596a)
+2022-03-18T00:48:51.1117937+05:30 0HMG89BF700LP:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/CourseRegistered/Registration application/json 74 (ca22a1cb)
+2022-03-18T00:48:51.1137762+05:30 0HMG89BF700LP:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Registration (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:48:51.1243832+05:30 0HMG89BF700LP:00000002 [INF] Route matched with "{action = \"Registration\", controller = \"CourseRegistered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Registration(CourseManagementSystem.DomainLayer.Registration)" on controller "CourseManagementSystem.Controllers.CourseRegistered" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:48:51.1301163+05:30 0HMG89BF700LP:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T00:48:51.1479471+05:30 0HMG89BF700LP:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:48:51.1713810+05:30 0HMG89BF700LP:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:48:51.2769452+05:30 0HMG89BF700LP:00000002 [INF] Executed DbCommand ("16"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [register] ([Registration_Id], [Course_Id], [Course_StartDate], [student_ID])
+VALUES (@p0, @p1, @p2, @p3);" (0723d8ff)
+2022-03-18T00:48:51.2957944+05:30 0HMG89BF700LP:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-18T00:48:51.2959369+05:30 0HMG89BF700LP:00000002 [INF] Executed action "CourseManagementSystem.Controllers.CourseRegistered.Registration (CourseManagementSystem)" in 171.4985ms (afa2e885)
+2022-03-18T00:48:51.2959595+05:30 0HMG89BF700LP:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Registration (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:48:51.2960343+05:30 0HMG89BF700LP:00000002 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/CourseRegistered/Registration application/json 74 - 200 - text/plain;+charset=utf-8 184.2944ms (791a596a)
+2022-03-18T00:48:56.1715134+05:30 0HMG89BF700LP:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/CourseRegistered/AllCourse - - (ca22a1cb)
+2022-03-18T00:48:56.1717666+05:30 0HMG89BF700LP:00000003 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:48:56.1719568+05:30 0HMG89BF700LP:00000003 [INF] Route matched with "{action = \"AllCourse\", controller = \"CourseRegistered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.CourseRegistered" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:48:56.1752151+05:30 0HMG89BF700LP:00000003 [INF] Course class called (4e8a56dc)
+2022-03-18T00:48:56.1765306+05:30 0HMG89BF700LP:00000003 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:48:56.1818968+05:30 0HMG89BF700LP:00000003 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:48:56.1878760+05:30 0HMG89BF700LP:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Registration_Id] AS [registered_id], [s].[Student_Name] AS [Name], [s].[Email] AS [email], [c].[Course_Name] AS [courseName], [c].[Course_Duration] AS [courseDuration], [r].[Course_StartDate] AS [start_Date]
+FROM [register] AS [r]
+INNER JOIN [courses] AS [c] ON [r].[Course_Id] = [c].[Course_Id]
+INNER JOIN [students] AS [s] ON [r].[student_ID] = [s].[student_Id]" (0723d8ff)
+2022-03-18T00:48:56.1883594+05:30 0HMG89BF700LP:00000003 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.RegisteredStudentList, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T00:48:56.1887600+05:30 0HMG89BF700LP:00000003 [INF] Executed action "CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)" in 16.7637ms (afa2e885)
+2022-03-18T00:48:56.1887983+05:30 0HMG89BF700LP:00000003 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:48:56.1889377+05:30 0HMG89BF700LP:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/CourseRegistered/AllCourse - - - 200 - application/json;+charset=utf-8 17.5477ms (791a596a)
+2022-03-18T00:49:25.0534550+05:30 0HMG89BF700LQ:00000002 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/CourseRegistered/Unregistered/id?email=shubhamr%40gmail.com - - (ca22a1cb)
+2022-03-18T00:49:25.0537300+05:30 0HMG89BF700LQ:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Unregistered (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:49:25.0555395+05:30 0HMG89BF700LQ:00000002 [INF] Route matched with "{action = \"Unregistered\", controller = \"CourseRegistered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Unregistered(System.String)" on controller "CourseManagementSystem.Controllers.CourseRegistered" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:49:25.0577028+05:30 0HMG89BF700LQ:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T00:49:25.0649229+05:30 0HMG89BF700LQ:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:49:25.0681976+05:30 0HMG89BF700LQ:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:49:25.1341993+05:30 0HMG89BF700LQ:00000002 [ERR] Exception Detail : (3dfdc342)
+2022-03-18T00:49:25.1346390+05:30 0HMG89BF700LQ:00000002 [INF] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'. (605b4265)
+2022-03-18T00:49:25.1387427+05:30 0HMG89BF700LQ:00000002 [INF] Executed action "CourseManagementSystem.Controllers.CourseRegistered.Unregistered (CourseManagementSystem)" in 83.1355ms (afa2e885)
+2022-03-18T00:49:25.1388146+05:30 0HMG89BF700LQ:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Unregistered (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:49:25.1389475+05:30 0HMG89BF700LQ:00000002 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/CourseRegistered/Unregistered/id?email=shubhamr%40gmail.com - - - 400 - application/problem+json;+charset=utf-8 85.4812ms (791a596a)
+2022-03-18T00:52:46.0699186+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-18T00:52:46.0735071+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-18T00:52:46.0751503+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-18T00:52:46.0763694+05:30  [INF] Content root path: "C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem" (b5d60022)
+2022-03-18T00:52:46.7295534+05:30 0HMG89E25DLA3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-18T00:52:46.8269656+05:30 0HMG89E25DLA3:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 102.1854ms (791a596a)
+2022-03-18T00:52:46.9385518+05:30 0HMG89E25DLA3:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-18T00:52:47.0233102+05:30 0HMG89E25DLA3:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 84.7421ms (791a596a)
+2022-03-18T00:52:53.9752074+05:30 0HMG89E25DLA3:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/CourseRegistered/AllCourse - - (ca22a1cb)
+2022-03-18T00:52:54.0031453+05:30 0HMG89E25DLA3:00000004 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:52:54.0223689+05:30 0HMG89E25DLA3:00000004 [INF] Route matched with "{action = \"AllCourse\", controller = \"CourseRegistered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.CourseRegistered" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:52:54.1236405+05:30 0HMG89E25DLA3:00000004 [INF] Course class called (4e8a56dc)
+2022-03-18T00:52:54.1260757+05:30 0HMG89E25DLA3:00000004 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:52:54.4463039+05:30 0HMG89E25DLA3:00000004 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:52:54.8956478+05:30 0HMG89E25DLA3:00000004 [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Registration_Id] AS [registered_id], [s].[Student_Name] AS [Name], [s].[Email] AS [email], [c].[Course_Name] AS [courseName], [c].[Course_Duration] AS [courseDuration], [r].[Course_StartDate] AS [start_Date]
+FROM [register] AS [r]
+INNER JOIN [courses] AS [c] ON [r].[Course_Id] = [c].[Course_Id]
+INNER JOIN [students] AS [s] ON [r].[student_ID] = [s].[student_Id]" (0723d8ff)
+2022-03-18T00:52:54.9154737+05:30 0HMG89E25DLA3:00000004 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.RegisteredStudentList, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T00:52:54.9263547+05:30 0HMG89E25DLA3:00000004 [INF] Executed action "CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)" in 900.3877ms (afa2e885)
+2022-03-18T00:52:54.9264194+05:30 0HMG89E25DLA3:00000004 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseRegistered.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:52:54.9298557+05:30 0HMG89E25DLA3:00000004 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/CourseRegistered/AllCourse - - - 200 - application/json;+charset=utf-8 954.6434ms (791a596a)
+2022-03-18T00:53:04.7873382+05:30 0HMG89E25DLA3:00000005 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/CourseRegistered/Unregistered/id?id=3 - - (ca22a1cb)
+2022-03-18T00:53:04.7898887+05:30 0HMG89E25DLA3:00000005 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Unregistered (CourseManagementSystem)"' (500cc934)
+2022-03-18T00:53:04.7987421+05:30 0HMG89E25DLA3:00000005 [INF] Route matched with "{action = \"Unregistered\", controller = \"CourseRegistered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Unregistered(Int32)" on controller "CourseManagementSystem.Controllers.CourseRegistered" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T00:53:04.8026262+05:30 0HMG89E25DLA3:00000005 [INF] Course class called (4e8a56dc)
+2022-03-18T00:53:04.8127009+05:30 0HMG89E25DLA3:00000005 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T00:53:04.8337092+05:30 0HMG89E25DLA3:00000005 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T00:53:04.8850405+05:30 0HMG89E25DLA3:00000005 [INF] Executed DbCommand ("14"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[registered_id], [r].[Name], [r].[courseDuration], [r].[courseName], [r].[email], [r].[start_Date]
+FROM [registerstudent] AS [r]
+WHERE [r].[registered_id] = @__p_0" (0723d8ff)
+2022-03-18T00:53:04.9395614+05:30 0HMG89E25DLA3:00000005 [ERR] Exception Detail : (3dfdc342)
+2022-03-18T00:53:04.9400754+05:30 0HMG89E25DLA3:00000005 [INF] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'. (605b4265)
+2022-03-18T00:53:04.9432041+05:30 0HMG89E25DLA3:00000005 [INF] Executed action "CourseManagementSystem.Controllers.CourseRegistered.Unregistered (CourseManagementSystem)" in 144.2755ms (afa2e885)
+2022-03-18T00:53:04.9432371+05:30 0HMG89E25DLA3:00000005 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseRegistered.Unregistered (CourseManagementSystem)"' (99874f2b)
+2022-03-18T00:53:04.9433290+05:30 0HMG89E25DLA3:00000005 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/CourseRegistered/Unregistered/id?id=3 - - - 400 - application/problem+json;+charset=utf-8 156.0233ms (791a596a)
+2022-03-18T01:02:18.5576615+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-18T01:02:18.5624253+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-18T01:02:18.5641383+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-18T01:02:18.5653302+05:30  [INF] Content root path: "C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem" (b5d60022)
+2022-03-18T01:02:19.6300953+05:30 0HMG89JCRVP6J:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-18T01:02:19.7541857+05:30 0HMG89JCRVP6J:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 127.8804ms (791a596a)
+2022-03-18T01:02:19.8886956+05:30 0HMG89JCRVP6J:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-18T01:02:19.9564990+05:30 0HMG89JCRVP6J:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 67.0997ms (791a596a)
+2022-03-18T01:02:28.2673331+05:30 0HMG89JCRVP6J:00000004 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/Registered/Unregistered/id?id=1 - - (ca22a1cb)
+2022-03-18T01:02:28.2946940+05:30 0HMG89JCRVP6J:00000004 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegisteredController.Unregistered (CourseManagementSystem)"' (500cc934)
+2022-03-18T01:02:28.3248311+05:30 0HMG89JCRVP6J:00000004 [INF] Route matched with "{action = \"Unregistered\", controller = \"Registered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Unregistered(Int32)" on controller "CourseManagementSystem.Controllers.RegisteredController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T01:02:28.4380856+05:30 0HMG89JCRVP6J:00000004 [INF] Course class called (4e8a56dc)
+2022-03-18T01:02:28.4473662+05:30 0HMG89JCRVP6J:00000004 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T01:02:28.7952292+05:30 0HMG89JCRVP6J:00000004 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T01:02:29.2715298+05:30 0HMG89JCRVP6J:00000004 [INF] Executed DbCommand ("25"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[registered_id], [r].[Name], [r].[courseDuration], [r].[courseName], [r].[email], [r].[start_Date]
+FROM [registerstudent] AS [r]
+WHERE [r].[registered_id] = @__p_0" (0723d8ff)
+2022-03-18T01:02:29.3361153+05:30 0HMG89JCRVP6J:00000004 [ERR] Exception Detail : (3dfdc342)
+2022-03-18T01:02:29.3413990+05:30 0HMG89JCRVP6J:00000004 [INF] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'. (605b4265)
+2022-03-18T01:02:29.3562025+05:30 0HMG89JCRVP6J:00000004 [INF] Executed action "CourseManagementSystem.Controllers.RegisteredController.Unregistered (CourseManagementSystem)" in 1024.9492ms (afa2e885)
+2022-03-18T01:02:29.3563462+05:30 0HMG89JCRVP6J:00000004 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegisteredController.Unregistered (CourseManagementSystem)"' (99874f2b)
+2022-03-18T01:02:29.3593746+05:30 0HMG89JCRVP6J:00000004 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/Registered/Unregistered/id?id=1 - - - 400 - application/problem+json;+charset=utf-8 1092.0479ms (791a596a)
+2022-03-18T01:03:52.2482949+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-18T01:03:52.2549196+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-18T01:03:52.2562614+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-18T01:03:52.2576781+05:30  [INF] Content root path: "C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem" (b5d60022)
+2022-03-18T01:03:53.1163254+05:30 0HMG89K8O8C4Q:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-18T01:03:53.2046979+05:30 0HMG89K8O8C4Q:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 92.0409ms (791a596a)
+2022-03-18T01:03:53.3446984+05:30 0HMG89K8O8C4Q:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-18T01:03:53.4281940+05:30 0HMG89K8O8C4Q:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 83.4874ms (791a596a)
+2022-03-18T01:04:28.5686244+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-18T01:04:28.5722467+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-18T01:04:28.5734440+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-18T01:04:28.5744895+05:30  [INF] Content root path: "C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem" (b5d60022)
+2022-03-18T01:04:29.2393323+05:30 0HMG89KJGNAU7:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-18T01:04:29.3209698+05:30 0HMG89KJGNAU7:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 84.0197ms (791a596a)
+2022-03-18T01:04:29.4657711+05:30 0HMG89KJGNAU7:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-18T01:04:29.5590497+05:30 0HMG89KJGNAU7:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 93.3047ms (791a596a)
+2022-03-18T01:05:17.9620023+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-18T01:05:17.9660068+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-18T01:05:17.9672101+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-18T01:05:17.9683533+05:30  [INF] Content root path: "C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem" (b5d60022)
+2022-03-18T01:05:18.8826170+05:30 0HMG89L2AH3U6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-18T01:05:18.9701596+05:30 0HMG89L2AH3U6:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 92.2258ms (791a596a)
+2022-03-18T01:05:19.0934967+05:30 0HMG89L2AH3U6:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-18T01:05:19.1830173+05:30 0HMG89L2AH3U6:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 87.7895ms (791a596a)
+2022-03-18T01:05:30.0966034+05:30 0HMG89L2AH3U8:00000002 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/Registered/Unregistered/id?id=1 - - (ca22a1cb)
+2022-03-18T01:05:30.1305374+05:30 0HMG89L2AH3U8:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegisteredController.Unregistered (CourseManagementSystem)"' (500cc934)
+2022-03-18T01:05:30.1576750+05:30 0HMG89L2AH3U8:00000002 [INF] Route matched with "{action = \"Unregistered\", controller = \"Registered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Unregistered(Int32)" on controller "CourseManagementSystem.Controllers.RegisteredController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T01:05:30.2561291+05:30 0HMG89L2AH3U8:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T01:05:30.2649081+05:30 0HMG89L2AH3U8:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T01:05:57.8216468+05:30 0HMG89L2AH3U8:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T01:05:58.2761251+05:30 0HMG89L2AH3U8:00000002 [INF] Executed DbCommand ("37"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[registered_id], [r].[Name], [r].[courseDuration], [r].[courseName], [r].[email], [r].[start_Date]
+FROM [registerstudent] AS [r]
+WHERE [r].[registered_id] = @__p_0" (0723d8ff)
+2022-03-18T01:05:58.3196657+05:30 0HMG89L2AH3U8:00000002 [ERR] Exception Detail : (3dfdc342)
+2022-03-18T01:05:58.3245458+05:30 0HMG89L2AH3U8:00000002 [INF] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'. (605b4265)
+2022-03-18T01:05:58.3353984+05:30 0HMG89L2AH3U8:00000002 [INF] Executed action "CourseManagementSystem.Controllers.RegisteredController.Unregistered (CourseManagementSystem)" in 28174.0639ms (afa2e885)
+2022-03-18T01:05:58.3354803+05:30 0HMG89L2AH3U8:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegisteredController.Unregistered (CourseManagementSystem)"' (99874f2b)
+2022-03-18T01:05:58.3378350+05:30 0HMG89L2AH3U8:00000002 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/Registered/Unregistered/id?id=1 - - - 400 - application/problem+json;+charset=utf-8 28241.2411ms (791a596a)
+2022-03-18T08:47:31.8313909+05:30  [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:48:28.1484702+05:30  [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:48:28.4415008+05:30  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2022-03-18T08:48:28.4661157+05:30  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2022-03-18T08:48:28.4682922+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2022-03-18T08:48:28.5834129+05:30  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);" (0723d8ff)
+2022-03-18T08:48:28.5848058+05:30  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2022-03-18T08:48:28.5862518+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2022-03-18T08:48:28.5891361+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2022-03-18T08:48:28.6043338+05:30  [INF] Applying migration '"20220318031731_courses"'. (0e2ac64d)
+2022-03-18T08:48:28.6294673+05:30  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [courses] (
+    [Course_Id] int NOT NULL,
+    [Course_Name] nvarchar(max) NULL,
+    [Course_Duration] nvarchar(max) NULL,
+    [Course_Instructor] nvarchar(max) NULL,
+    [Course_Description] nvarchar(max) NULL,
+    CONSTRAINT [PK_courses] PRIMARY KEY ([Course_Id])
+);" (0723d8ff)
+2022-03-18T08:48:28.6305721+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [register] (
+    [Registration_Id] int NOT NULL,
+    [Course_StartDate] nvarchar(max) NULL,
+    [Course_Id] int NOT NULL,
+    [student_ID] int NOT NULL,
+    CONSTRAINT [PK_register] PRIMARY KEY ([Registration_Id])
+);" (0723d8ff)
+2022-03-18T08:48:28.6331542+05:30  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [registerstudent] (
+    [registered_id] int NOT NULL,
+    [Name] nvarchar(max) NULL,
+    [email] nvarchar(max) NULL,
+    [courseName] nvarchar(max) NULL,
+    [courseDuration] nvarchar(max) NULL,
+    [start_Date] nvarchar(max) NULL,
+    CONSTRAINT [PK_registerstudent] PRIMARY KEY ([registered_id])
+);" (0723d8ff)
+2022-03-18T08:48:28.6343277+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [students] (
+    [student_Id] int NOT NULL,
+    [Student_Name] nvarchar(max) NULL,
+    [Contact_No] int NOT NULL,
+    [Email] nvarchar(max) NULL,
+    CONSTRAINT [PK_students] PRIMARY KEY ([student_Id])
+);" (0723d8ff)
+2022-03-18T08:48:28.6360638+05:30  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20220318031731_courses', N'5.0.15');" (0723d8ff)
+2022-03-18T08:49:19.9969604+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-18T08:49:20.0036659+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-18T08:49:20.0059720+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-18T08:49:20.0588487+05:30  [INF] Content root path: "C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem" (b5d60022)
+2022-03-18T08:49:21.2263750+05:30 0HMG8HOBQPEUI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-18T08:49:21.5417017+05:30 0HMG8HOBQPEUI:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 323.5355ms (791a596a)
+2022-03-18T08:49:21.7401497+05:30 0HMG8HOBQPEUI:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-18T08:49:21.8453043+05:30 0HMG8HOBQPEUI:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 105.0745ms (791a596a)
+2022-03-18T08:49:32.8936668+05:30 0HMG8HOBQPEUI:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Course/AllCourse - - (ca22a1cb)
+2022-03-18T08:49:32.9586405+05:30 0HMG8HOBQPEUI:00000004 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseController.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T08:49:32.9929055+05:30 0HMG8HOBQPEUI:00000004 [INF] Route matched with "{action = \"AllCourse\", controller = \"Course\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.CourseController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T08:49:33.1555879+05:30 0HMG8HOBQPEUI:00000004 [INF] Course class called (4e8a56dc)
+2022-03-18T08:49:33.1594740+05:30 0HMG8HOBQPEUI:00000004 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T08:49:33.6439342+05:30 0HMG8HOBQPEUI:00000004 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:49:34.3159238+05:30 0HMG8HOBQPEUI:00000004 [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Course_Id], [c].[Course_Description], [c].[Course_Duration], [c].[Course_Instructor], [c].[Course_Name]
+FROM [courses] AS [c]" (0723d8ff)
+2022-03-18T08:49:34.4152634+05:30 0HMG8HOBQPEUI:00000004 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.Course, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T08:49:34.4337712+05:30 0HMG8HOBQPEUI:00000004 [INF] Executed action "CourseManagementSystem.Controllers.CourseController.AllCourse (CourseManagementSystem)" in 1434.3041ms (afa2e885)
+2022-03-18T08:49:34.4338702+05:30 0HMG8HOBQPEUI:00000004 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseController.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T08:49:34.4380862+05:30 0HMG8HOBQPEUI:00000004 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Course/AllCourse - - - 200 - application/json;+charset=utf-8 1544.5755ms (791a596a)
+2022-03-18T08:49:47.0397692+05:30 0HMG8HOBQPEUK:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Course/AddCourse application/json 124 (ca22a1cb)
+2022-03-18T08:49:47.0449704+05:30 0HMG8HOBQPEUK:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseController.AddCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T08:49:47.0721007+05:30 0HMG8HOBQPEUK:00000002 [INF] Route matched with "{action = \"AddCourse\", controller = \"Course\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AddCourse(CourseManagementSystem.DomainLayer.Course)" on controller "CourseManagementSystem.Controllers.CourseController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T08:49:47.0771275+05:30 0HMG8HOBQPEUK:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T08:49:47.1045369+05:30 0HMG8HOBQPEUK:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T08:49:47.1355366+05:30 0HMG8HOBQPEUK:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:49:47.2930455+05:30 0HMG8HOBQPEUK:00000002 [INF] Executed DbCommand ("31"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [courses] ([Course_Id], [Course_Description], [Course_Duration], [Course_Instructor], [Course_Name])
+VALUES (@p0, @p1, @p2, @p3, @p4);" (0723d8ff)
+2022-03-18T08:49:47.3086506+05:30 0HMG8HOBQPEUK:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-18T08:49:47.3089212+05:30 0HMG8HOBQPEUK:00000002 [INF] Executed action "CourseManagementSystem.Controllers.CourseController.AddCourse (CourseManagementSystem)" in 236.6984ms (afa2e885)
+2022-03-18T08:49:47.3089682+05:30 0HMG8HOBQPEUK:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseController.AddCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T08:49:47.3091146+05:30 0HMG8HOBQPEUK:00000002 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Course/AddCourse application/json 124 - 200 - text/plain;+charset=utf-8 269.5824ms (791a596a)
+2022-03-18T08:49:51.6687694+05:30 0HMG8HOBQPEUK:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Course/AllCourse - - (ca22a1cb)
+2022-03-18T08:49:51.6692104+05:30 0HMG8HOBQPEUK:00000003 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseController.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T08:49:51.6697999+05:30 0HMG8HOBQPEUK:00000003 [INF] Route matched with "{action = \"AllCourse\", controller = \"Course\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.CourseController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T08:49:51.6828470+05:30 0HMG8HOBQPEUK:00000003 [INF] Course class called (4e8a56dc)
+2022-03-18T08:49:51.6902072+05:30 0HMG8HOBQPEUK:00000003 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T08:49:51.7133202+05:30 0HMG8HOBQPEUK:00000003 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:49:51.7190083+05:30 0HMG8HOBQPEUK:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Course_Id], [c].[Course_Description], [c].[Course_Duration], [c].[Course_Instructor], [c].[Course_Name]
+FROM [courses] AS [c]" (0723d8ff)
+2022-03-18T08:49:51.7198219+05:30 0HMG8HOBQPEUK:00000003 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.Course, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T08:49:51.7203663+05:30 0HMG8HOBQPEUK:00000003 [INF] Executed action "CourseManagementSystem.Controllers.CourseController.AllCourse (CourseManagementSystem)" in 50.4626ms (afa2e885)
+2022-03-18T08:49:51.7204584+05:30 0HMG8HOBQPEUK:00000003 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseController.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T08:49:51.7206636+05:30 0HMG8HOBQPEUK:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Course/AllCourse - - - 200 - application/json;+charset=utf-8 52.0740ms (791a596a)
+2022-03-18T08:50:04.6229451+05:30 0HMG8HOBQPEUL:00000002 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/Course/DeleteCourse/id?id=4 - - (ca22a1cb)
+2022-03-18T08:50:04.6233335+05:30 0HMG8HOBQPEUL:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseController.DeleteCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T08:50:04.6296349+05:30 0HMG8HOBQPEUL:00000002 [INF] Route matched with "{action = \"DeleteCourse\", controller = \"Course\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult DeleteCourse(Int32)" on controller "CourseManagementSystem.Controllers.CourseController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T08:50:04.6363817+05:30 0HMG8HOBQPEUL:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T08:50:04.6545840+05:30 0HMG8HOBQPEUL:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T08:50:04.6579286+05:30 0HMG8HOBQPEUL:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:50:04.8609788+05:30 0HMG8HOBQPEUL:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Course_Id], [c].[Course_Description], [c].[Course_Duration], [c].[Course_Instructor], [c].[Course_Name]
+FROM [courses] AS [c]
+WHERE [c].[Course_Id] = @__p_0" (0723d8ff)
+2022-03-18T08:50:04.8832040+05:30 0HMG8HOBQPEUL:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [courses]
+WHERE [Course_Id] = @p0;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-03-18T08:50:04.8887195+05:30 0HMG8HOBQPEUL:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-18T08:50:04.8888630+05:30 0HMG8HOBQPEUL:00000002 [INF] Executed action "CourseManagementSystem.Controllers.CourseController.DeleteCourse (CourseManagementSystem)" in 259.1204ms (afa2e885)
+2022-03-18T08:50:04.8889062+05:30 0HMG8HOBQPEUL:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseController.DeleteCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T08:50:04.8890048+05:30 0HMG8HOBQPEUL:00000002 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/Course/DeleteCourse/id?id=4 - - - 200 - text/plain;+charset=utf-8 266.1133ms (791a596a)
+2022-03-18T08:50:09.6083233+05:30 0HMG8HOBQPEUM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Course/AllCourse - - (ca22a1cb)
+2022-03-18T08:50:09.6089206+05:30 0HMG8HOBQPEUM:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.CourseController.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T08:50:09.6092529+05:30 0HMG8HOBQPEUM:00000002 [INF] Route matched with "{action = \"AllCourse\", controller = \"Course\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.CourseController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T08:50:09.6147946+05:30 0HMG8HOBQPEUM:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T08:50:09.6201494+05:30 0HMG8HOBQPEUM:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T08:50:09.6210990+05:30 0HMG8HOBQPEUM:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:50:09.6228390+05:30 0HMG8HOBQPEUM:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Course_Id], [c].[Course_Description], [c].[Course_Duration], [c].[Course_Instructor], [c].[Course_Name]
+FROM [courses] AS [c]" (0723d8ff)
+2022-03-18T08:50:09.6234522+05:30 0HMG8HOBQPEUM:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.Course, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T08:50:09.6237984+05:30 0HMG8HOBQPEUM:00000002 [INF] Executed action "CourseManagementSystem.Controllers.CourseController.AllCourse (CourseManagementSystem)" in 14.4141ms (afa2e885)
+2022-03-18T08:50:09.6238823+05:30 0HMG8HOBQPEUM:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.CourseController.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T08:50:09.6241002+05:30 0HMG8HOBQPEUM:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Course/AllCourse - - - 200 - application/json;+charset=utf-8 15.7758ms (791a596a)
+2022-03-18T08:50:42.6978307+05:30 0HMG8HOBQPEUN:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Registered/Registration application/json 84 (ca22a1cb)
+2022-03-18T08:50:42.6981925+05:30 0HMG8HOBQPEUN:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegisteredController.Registration (CourseManagementSystem)"' (500cc934)
+2022-03-18T08:50:42.7021575+05:30 0HMG8HOBQPEUN:00000002 [INF] Route matched with "{action = \"Registration\", controller = \"Registered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Registration(CourseManagementSystem.DomainLayer.Registration)" on controller "CourseManagementSystem.Controllers.RegisteredController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T08:50:42.7068080+05:30 0HMG8HOBQPEUN:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T08:50:42.7165674+05:30 0HMG8HOBQPEUN:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T08:50:42.7186327+05:30 0HMG8HOBQPEUN:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:50:42.7360626+05:30 0HMG8HOBQPEUN:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [register] ([Registration_Id], [Course_Id], [Course_StartDate], [student_ID])
+VALUES (@p0, @p1, @p2, @p3);" (0723d8ff)
+2022-03-18T08:50:42.7377323+05:30 0HMG8HOBQPEUN:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-18T08:50:42.7378483+05:30 0HMG8HOBQPEUN:00000002 [INF] Executed action "CourseManagementSystem.Controllers.RegisteredController.Registration (CourseManagementSystem)" in 35.6347ms (afa2e885)
+2022-03-18T08:50:42.7378866+05:30 0HMG8HOBQPEUN:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegisteredController.Registration (CourseManagementSystem)"' (99874f2b)
+2022-03-18T08:50:42.7379816+05:30 0HMG8HOBQPEUN:00000002 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Registered/Registration application/json 84 - 200 - text/plain;+charset=utf-8 40.1941ms (791a596a)
+2022-03-18T08:50:50.5537075+05:30 0HMG8HOBQPEUO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Registered/AllCourse - - (ca22a1cb)
+2022-03-18T08:50:50.5576885+05:30 0HMG8HOBQPEUO:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T08:50:50.5605551+05:30 0HMG8HOBQPEUO:00000002 [INF] Route matched with "{action = \"AllCourse\", controller = \"Registered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.RegisteredController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T08:50:50.5663878+05:30 0HMG8HOBQPEUO:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T08:50:50.5737374+05:30 0HMG8HOBQPEUO:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T08:50:50.5846837+05:30 0HMG8HOBQPEUO:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:50:50.6772839+05:30 0HMG8HOBQPEUO:00000002 [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Registration_Id] AS [registered_id], [s].[Student_Name] AS [Name], [s].[Email] AS [email], [c].[Course_Name] AS [courseName], [c].[Course_Duration] AS [courseDuration], [r].[Course_StartDate] AS [start_Date]
+FROM [register] AS [r]
+INNER JOIN [courses] AS [c] ON [r].[Course_Id] = [c].[Course_Id]
+INNER JOIN [students] AS [s] ON [r].[student_ID] = [s].[student_Id]" (0723d8ff)
+2022-03-18T08:50:50.6791495+05:30 0HMG8HOBQPEUO:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.RegisteredStudentList, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T08:50:50.6839093+05:30 0HMG8HOBQPEUO:00000002 [INF] Executed action "CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)" in 123.2329ms (afa2e885)
+2022-03-18T08:50:50.6840063+05:30 0HMG8HOBQPEUO:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T08:50:50.6841921+05:30 0HMG8HOBQPEUO:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Registered/AllCourse - - - 200 - application/json;+charset=utf-8 130.5196ms (791a596a)
+2022-03-18T08:51:10.5771721+05:30 0HMG8HOBQPEUP:00000002 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/Registered/Unregistered/id?id=1 - - (ca22a1cb)
+2022-03-18T08:51:10.5773090+05:30 0HMG8HOBQPEUP:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegisteredController.Unregistered (CourseManagementSystem)"' (500cc934)
+2022-03-18T08:51:10.5785720+05:30 0HMG8HOBQPEUP:00000002 [INF] Route matched with "{action = \"Unregistered\", controller = \"Registered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Unregistered(Int32)" on controller "CourseManagementSystem.Controllers.RegisteredController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T08:51:10.5823907+05:30 0HMG8HOBQPEUP:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T08:51:10.5868552+05:30 0HMG8HOBQPEUP:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T08:51:10.5877942+05:30 0HMG8HOBQPEUP:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:51:10.5938000+05:30 0HMG8HOBQPEUP:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[registered_id], [r].[Name], [r].[courseDuration], [r].[courseName], [r].[email], [r].[start_Date]
+FROM [registerstudent] AS [r]
+WHERE [r].[registered_id] = @__p_0" (0723d8ff)
+2022-03-18T08:51:10.7189933+05:30 0HMG8HOBQPEUP:00000002 [ERR] Exception Detail : (3dfdc342)
+2022-03-18T08:51:10.7195749+05:30 0HMG8HOBQPEUP:00000002 [INF] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'. (605b4265)
+2022-03-18T08:51:10.7244318+05:30 0HMG8HOBQPEUP:00000002 [INF] Executed action "CourseManagementSystem.Controllers.RegisteredController.Unregistered (CourseManagementSystem)" in 145.814ms (afa2e885)
+2022-03-18T08:51:10.7244657+05:30 0HMG8HOBQPEUP:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegisteredController.Unregistered (CourseManagementSystem)"' (99874f2b)
+2022-03-18T08:51:10.7245736+05:30 0HMG8HOBQPEUP:00000002 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/Registered/Unregistered/id?id=1 - - - 400 - application/problem+json;+charset=utf-8 147.3899ms (791a596a)
+2022-03-18T08:53:16.1961675+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-18T08:53:16.2021256+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-18T08:53:16.2043322+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-18T08:53:16.2062236+05:30  [INF] Content root path: "C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem" (b5d60022)
+2022-03-18T08:53:16.8645185+05:30 0HMG8HQI6EVNA:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-18T08:53:17.0269506+05:30 0HMG8HQI6EVNA:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 178.7327ms (791a596a)
+2022-03-18T08:53:17.3104865+05:30 0HMG8HQI6EVNA:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-18T08:53:17.5595485+05:30 0HMG8HQI6EVNA:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 248.9921ms (791a596a)
+2022-03-18T08:53:32.3434312+05:30 0HMG8HQI6EVNC:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Registered/AllCourse - - (ca22a1cb)
+2022-03-18T08:53:32.4489025+05:30 0HMG8HQI6EVNC:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T08:53:32.5369157+05:30 0HMG8HQI6EVNC:00000002 [INF] Route matched with "{action = \"AllCourse\", controller = \"Registered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.RegisteredController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T08:53:32.7778603+05:30 0HMG8HQI6EVNC:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T08:53:32.7814435+05:30 0HMG8HQI6EVNC:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T08:53:33.2737228+05:30 0HMG8HQI6EVNC:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:53:33.9039481+05:30 0HMG8HQI6EVNC:00000002 [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Registration_Id] AS [registered_id], [s].[Student_Name] AS [Name], [s].[Email] AS [email], [c].[Course_Name] AS [courseName], [c].[Course_Duration] AS [courseDuration], [r].[Course_StartDate] AS [start_Date]
+FROM [register] AS [r]
+INNER JOIN [courses] AS [c] ON [r].[Course_Id] = [c].[Course_Id]
+INNER JOIN [students] AS [s] ON [r].[student_ID] = [s].[student_Id]" (0723d8ff)
+2022-03-18T08:53:33.9326987+05:30 0HMG8HQI6EVNC:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.RegisteredStudentList, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T08:53:33.9487208+05:30 0HMG8HQI6EVNC:00000002 [INF] Executed action "CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)" in 1405.3473ms (afa2e885)
+2022-03-18T08:53:33.9488198+05:30 0HMG8HQI6EVNC:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T08:53:33.9530906+05:30 0HMG8HQI6EVNC:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Registered/AllCourse - - - 200 - application/json;+charset=utf-8 1609.7842ms (791a596a)
+2022-03-18T08:53:39.3715694+05:30 0HMG8HQI6EVNC:00000003 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/Registered/Unregistered/id?id=1 - - (ca22a1cb)
+2022-03-18T08:53:39.3752336+05:30 0HMG8HQI6EVNC:00000003 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegisteredController.Unregistered (CourseManagementSystem)"' (500cc934)
+2022-03-18T08:53:39.3965235+05:30 0HMG8HQI6EVNC:00000003 [INF] Route matched with "{action = \"Unregistered\", controller = \"Registered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Unregistered(Int32)" on controller "CourseManagementSystem.Controllers.RegisteredController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T08:53:39.4011106+05:30 0HMG8HQI6EVNC:00000003 [INF] Course class called (4e8a56dc)
+2022-03-18T08:53:39.4177647+05:30 0HMG8HQI6EVNC:00000003 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T08:53:39.4474570+05:30 0HMG8HQI6EVNC:00000003 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:53:39.5375120+05:30 0HMG8HQI6EVNC:00000003 [INF] Executed DbCommand ("32"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Registration_Id], [r].[Course_Id], [r].[Course_StartDate], [r].[student_ID]
+FROM [register] AS [r]
+WHERE [r].[Registration_Id] = @__p_0" (0723d8ff)
+2022-03-18T08:53:39.6759867+05:30 0HMG8HQI6EVNC:00000003 [INF] Executed DbCommand ("12"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [register]
+WHERE [Registration_Id] = @p0;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-03-18T08:53:39.6905260+05:30 0HMG8HQI6EVNC:00000003 [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-18T08:53:39.6907533+05:30 0HMG8HQI6EVNC:00000003 [INF] Executed action "CourseManagementSystem.Controllers.RegisteredController.Unregistered (CourseManagementSystem)" in 294.1444ms (afa2e885)
+2022-03-18T08:53:39.6907906+05:30 0HMG8HQI6EVNC:00000003 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegisteredController.Unregistered (CourseManagementSystem)"' (99874f2b)
+2022-03-18T08:53:39.6908960+05:30 0HMG8HQI6EVNC:00000003 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/Registered/Unregistered/id?id=1 - - - 200 - text/plain;+charset=utf-8 319.3686ms (791a596a)
+2022-03-18T08:53:43.8367751+05:30 0HMG8HQI6EVND:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Registered/AllCourse - - (ca22a1cb)
+2022-03-18T08:53:43.8370135+05:30 0HMG8HQI6EVND:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T08:53:43.8372337+05:30 0HMG8HQI6EVND:00000002 [INF] Route matched with "{action = \"AllCourse\", controller = \"Registered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.RegisteredController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T08:53:43.8420474+05:30 0HMG8HQI6EVND:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T08:53:43.8450614+05:30 0HMG8HQI6EVND:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T08:53:43.8546223+05:30 0HMG8HQI6EVND:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:53:43.8607518+05:30 0HMG8HQI6EVND:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Registration_Id] AS [registered_id], [s].[Student_Name] AS [Name], [s].[Email] AS [email], [c].[Course_Name] AS [courseName], [c].[Course_Duration] AS [courseDuration], [r].[Course_StartDate] AS [start_Date]
+FROM [register] AS [r]
+INNER JOIN [courses] AS [c] ON [r].[Course_Id] = [c].[Course_Id]
+INNER JOIN [students] AS [s] ON [r].[student_ID] = [s].[student_Id]" (0723d8ff)
+2022-03-18T08:53:43.8633496+05:30 0HMG8HQI6EVND:00000002 [INF] Course Endpoint ends (c167c14f)
+2022-03-18T08:53:43.8635635+05:30 0HMG8HQI6EVND:00000002 [INF] Executing "BadRequestObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-18T08:53:43.8636861+05:30 0HMG8HQI6EVND:00000002 [INF] Executed action "CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)" in 26.393ms (afa2e885)
+2022-03-18T08:53:43.8637375+05:30 0HMG8HQI6EVND:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T08:53:43.8638389+05:30 0HMG8HQI6EVND:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Registered/AllCourse - - - 400 - text/plain;+charset=utf-8 27.0609ms (791a596a)
+2022-03-18T08:56:57.5790623+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-18T08:56:57.5849532+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-18T08:56:57.5869764+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-18T08:56:57.5886697+05:30  [INF] Content root path: "C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem" (b5d60022)
+2022-03-18T08:56:58.6007339+05:30 0HMG8HSK7U5VU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-18T08:56:58.7367361+05:30 0HMG8HSK7U5VU:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 145.6272ms (791a596a)
+2022-03-18T08:56:58.8904771+05:30 0HMG8HSK7U5VU:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-18T08:56:58.9851919+05:30 0HMG8HSK7U5VU:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 94.6935ms (791a596a)
+2022-03-18T08:57:29.8366034+05:30 0HMG8HSK7U600:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Registered/Registration application/json 87 (ca22a1cb)
+2022-03-18T08:57:29.9527721+05:30 0HMG8HSK7U600:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegisteredController.Registration (CourseManagementSystem)"' (500cc934)
+2022-03-18T08:57:30.0421421+05:30 0HMG8HSK7U600:00000002 [INF] Route matched with "{action = \"Registration\", controller = \"Registered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Registration(CourseManagementSystem.DomainLayer.Registration)" on controller "CourseManagementSystem.Controllers.RegisteredController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T08:57:30.1961172+05:30 0HMG8HSK7U600:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T08:57:30.2188577+05:30 0HMG8HSK7U600:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T08:57:30.7300874+05:30 0HMG8HSK7U600:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:57:31.3003788+05:30 0HMG8HSK7U600:00000002 [INF] Executed DbCommand ("33"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [register] ([Registration_Id], [Course_Id], [Course_StartDate], [student_ID])
+VALUES (@p0, @p1, @p2, @p3);" (0723d8ff)
+2022-03-18T08:57:31.3421745+05:30 0HMG8HSK7U600:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-18T08:57:31.3483793+05:30 0HMG8HSK7U600:00000002 [INF] Executed action "CourseManagementSystem.Controllers.RegisteredController.Registration (CourseManagementSystem)" in 1300.461ms (afa2e885)
+2022-03-18T08:57:31.3484602+05:30 0HMG8HSK7U600:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegisteredController.Registration (CourseManagementSystem)"' (99874f2b)
+2022-03-18T08:57:31.3517380+05:30 0HMG8HSK7U600:00000002 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Registered/Registration application/json 87 - 200 - text/plain;+charset=utf-8 1515.3168ms (791a596a)
+2022-03-18T08:57:37.2990596+05:30 0HMG8HSK7U600:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Registered/AllCourse - - (ca22a1cb)
+2022-03-18T08:57:37.3012870+05:30 0HMG8HSK7U600:00000003 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T08:57:37.3026467+05:30 0HMG8HSK7U600:00000003 [INF] Route matched with "{action = \"AllCourse\", controller = \"Registered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.RegisteredController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T08:57:37.3057298+05:30 0HMG8HSK7U600:00000003 [INF] Course class called (4e8a56dc)
+2022-03-18T08:57:37.3113775+05:30 0HMG8HSK7U600:00000003 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T08:57:37.3576954+05:30 0HMG8HSK7U600:00000003 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:57:37.6287145+05:30 0HMG8HSK7U600:00000003 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Registration_Id] AS [registered_id], [s].[Student_Name] AS [Name], [s].[Email] AS [email], [c].[Course_Name] AS [courseName], [c].[Course_Duration] AS [courseDuration], [r].[Course_StartDate] AS [start_Date]
+FROM [register] AS [r]
+INNER JOIN [courses] AS [c] ON [r].[Course_Id] = [c].[Course_Id]
+INNER JOIN [students] AS [s] ON [r].[student_ID] = [s].[student_Id]" (0723d8ff)
+2022-03-18T08:57:37.6388725+05:30 0HMG8HSK7U600:00000003 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.RegisteredStudentList, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T08:57:37.6484134+05:30 0HMG8HSK7U600:00000003 [INF] Executed action "CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)" in 345.6561ms (afa2e885)
+2022-03-18T08:57:37.6484787+05:30 0HMG8HSK7U600:00000003 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T08:57:37.6486500+05:30 0HMG8HSK7U600:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Registered/AllCourse - - - 200 - application/json;+charset=utf-8 349.5986ms (791a596a)
+2022-03-18T08:57:56.0983728+05:30 0HMG8HSK7U601:00000002 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/Registered/Unregistered/id?id=1 - - (ca22a1cb)
+2022-03-18T08:57:56.0986970+05:30 0HMG8HSK7U601:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegisteredController.Unregistered (CourseManagementSystem)"' (500cc934)
+2022-03-18T08:57:56.1027570+05:30 0HMG8HSK7U601:00000002 [INF] Route matched with "{action = \"Unregistered\", controller = \"Registered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Unregistered(Int32)" on controller "CourseManagementSystem.Controllers.RegisteredController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T08:57:56.1108035+05:30 0HMG8HSK7U601:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T08:57:56.1214139+05:30 0HMG8HSK7U601:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T08:57:56.1359400+05:30 0HMG8HSK7U601:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:57:56.2153946+05:30 0HMG8HSK7U601:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Registration_Id], [r].[Course_Id], [r].[Course_StartDate], [r].[student_ID]
+FROM [register] AS [r]
+WHERE [r].[Registration_Id] = @__p_0" (0723d8ff)
+2022-03-18T08:57:56.2282396+05:30 0HMG8HSK7U601:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [register]
+WHERE [Registration_Id] = @p0;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-03-18T08:57:56.2485752+05:30 0HMG8HSK7U601:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-18T08:57:56.2486976+05:30 0HMG8HSK7U601:00000002 [INF] Executed action "CourseManagementSystem.Controllers.RegisteredController.Unregistered (CourseManagementSystem)" in 145.8798ms (afa2e885)
+2022-03-18T08:57:56.2487321+05:30 0HMG8HSK7U601:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegisteredController.Unregistered (CourseManagementSystem)"' (99874f2b)
+2022-03-18T08:57:56.2488170+05:30 0HMG8HSK7U601:00000002 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/Registered/Unregistered/id?id=1 - - - 200 - text/plain;+charset=utf-8 150.5059ms (791a596a)
+2022-03-18T08:58:13.1088790+05:30 0HMG8HSK7U602:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Registered/AllCourse - - (ca22a1cb)
+2022-03-18T08:58:13.1092433+05:30 0HMG8HSK7U602:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T08:58:13.1096543+05:30 0HMG8HSK7U602:00000002 [INF] Route matched with "{action = \"AllCourse\", controller = \"Registered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.RegisteredController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T08:58:13.1155327+05:30 0HMG8HSK7U602:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T08:58:13.1277889+05:30 0HMG8HSK7U602:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T08:58:13.1288915+05:30 0HMG8HSK7U602:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:58:13.1480500+05:30 0HMG8HSK7U602:00000002 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Registration_Id] AS [registered_id], [s].[Student_Name] AS [Name], [s].[Email] AS [email], [c].[Course_Name] AS [courseName], [c].[Course_Duration] AS [courseDuration], [r].[Course_StartDate] AS [start_Date]
+FROM [register] AS [r]
+INNER JOIN [courses] AS [c] ON [r].[Course_Id] = [c].[Course_Id]
+INNER JOIN [students] AS [s] ON [r].[student_ID] = [s].[student_Id]" (0723d8ff)
+2022-03-18T08:58:13.1526827+05:30 0HMG8HSK7U602:00000002 [INF] Course Endpoint ends (c167c14f)
+2022-03-18T08:58:13.1529143+05:30 0HMG8HSK7U602:00000002 [INF] Executing "BadRequestObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-18T08:58:13.1530155+05:30 0HMG8HSK7U602:00000002 [INF] Executed action "CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)" in 43.304ms (afa2e885)
+2022-03-18T08:58:13.1530583+05:30 0HMG8HSK7U602:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T08:58:13.1531879+05:30 0HMG8HSK7U602:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Registered/AllCourse - - - 400 - text/plain;+charset=utf-8 44.3025ms (791a596a)
+2022-03-18T08:59:11.4112391+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-18T08:59:11.4166327+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-18T08:59:11.4186188+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-18T08:59:11.4201195+05:30  [INF] Content root path: "C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem" (b5d60022)
+2022-03-18T08:59:12.1749204+05:30 0HMG8HTS2G4B5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-18T08:59:12.3275396+05:30 0HMG8HTS2G4B5:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 172.6804ms (791a596a)
+2022-03-18T08:59:12.4620004+05:30 0HMG8HTS2G4B5:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-18T08:59:12.5739316+05:30 0HMG8HTS2G4B5:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 107.5219ms (791a596a)
+2022-03-18T08:59:35.1203231+05:30 0HMG8HTS2G4B7:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Registered/Registration application/json 80 (ca22a1cb)
+2022-03-18T08:59:35.2099810+05:30 0HMG8HTS2G4B7:00000002 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegisteredController.Registration (CourseManagementSystem)"' (500cc934)
+2022-03-18T08:59:35.2925416+05:30 0HMG8HTS2G4B7:00000002 [INF] Route matched with "{action = \"Registration\", controller = \"Registered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Registration(CourseManagementSystem.DomainLayer.Registration)" on controller "CourseManagementSystem.Controllers.RegisteredController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T08:59:35.4444753+05:30 0HMG8HTS2G4B7:00000002 [INF] Course class called (4e8a56dc)
+2022-03-18T08:59:35.4656694+05:30 0HMG8HTS2G4B7:00000002 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T08:59:35.9717595+05:30 0HMG8HTS2G4B7:00000002 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:59:36.5133828+05:30 0HMG8HTS2G4B7:00000002 [INF] Executed DbCommand ("31"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [register] ([Registration_Id], [Course_Id], [Course_StartDate], [student_ID])
+VALUES (@p0, @p1, @p2, @p3);" (0723d8ff)
+2022-03-18T08:59:36.5570614+05:30 0HMG8HTS2G4B7:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-18T08:59:36.5638361+05:30 0HMG8HTS2G4B7:00000002 [INF] Executed action "CourseManagementSystem.Controllers.RegisteredController.Registration (CourseManagementSystem)" in 1265.2047ms (afa2e885)
+2022-03-18T08:59:36.5639318+05:30 0HMG8HTS2G4B7:00000002 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegisteredController.Registration (CourseManagementSystem)"' (99874f2b)
+2022-03-18T08:59:36.5673166+05:30 0HMG8HTS2G4B7:00000002 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Registered/Registration application/json 80 - 200 - text/plain;+charset=utf-8 1447.2552ms (791a596a)
+2022-03-18T08:59:43.6519415+05:30 0HMG8HTS2G4B7:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Registered/AllCourse - - (ca22a1cb)
+2022-03-18T08:59:43.6576931+05:30 0HMG8HTS2G4B7:00000003 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T08:59:43.6617881+05:30 0HMG8HTS2G4B7:00000003 [INF] Route matched with "{action = \"AllCourse\", controller = \"Registered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.RegisteredController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T08:59:43.6676504+05:30 0HMG8HTS2G4B7:00000003 [INF] Course class called (4e8a56dc)
+2022-03-18T08:59:43.6763955+05:30 0HMG8HTS2G4B7:00000003 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T08:59:43.7841671+05:30 0HMG8HTS2G4B7:00000003 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:59:44.0569633+05:30 0HMG8HTS2G4B7:00000003 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Registration_Id] AS [registered_id], [s].[Student_Name] AS [Name], [s].[Email] AS [email], [c].[Course_Name] AS [courseName], [c].[Course_Duration] AS [courseDuration], [r].[Course_StartDate] AS [start_Date]
+FROM [register] AS [r]
+INNER JOIN [courses] AS [c] ON [r].[Course_Id] = [c].[Course_Id]
+INNER JOIN [students] AS [s] ON [r].[student_ID] = [s].[student_Id]" (0723d8ff)
+2022-03-18T08:59:44.0693135+05:30 0HMG8HTS2G4B7:00000003 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.RegisteredStudentList, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T08:59:44.0802913+05:30 0HMG8HTS2G4B7:00000003 [INF] Executed action "CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)" in 418.3309ms (afa2e885)
+2022-03-18T08:59:44.0803451+05:30 0HMG8HTS2G4B7:00000003 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T08:59:44.0804849+05:30 0HMG8HTS2G4B7:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Registered/AllCourse - - - 200 - application/json;+charset=utf-8 428.6268ms (791a596a)
+2022-03-18T08:59:57.0950524+05:30 0HMG8HTS2G4B7:00000004 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/Registered/Unregistered/id?id=1 - - (ca22a1cb)
+2022-03-18T08:59:57.0954602+05:30 0HMG8HTS2G4B7:00000004 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegisteredController.Unregistered (CourseManagementSystem)"' (500cc934)
+2022-03-18T08:59:57.0998365+05:30 0HMG8HTS2G4B7:00000004 [INF] Route matched with "{action = \"Unregistered\", controller = \"Registered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult Unregistered(Int32)" on controller "CourseManagementSystem.Controllers.RegisteredController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T08:59:57.1094730+05:30 0HMG8HTS2G4B7:00000004 [INF] Course class called (4e8a56dc)
+2022-03-18T08:59:57.1169060+05:30 0HMG8HTS2G4B7:00000004 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T08:59:57.1254894+05:30 0HMG8HTS2G4B7:00000004 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T08:59:57.1782213+05:30 0HMG8HTS2G4B7:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Registration_Id], [r].[Course_Id], [r].[Course_StartDate], [r].[student_ID]
+FROM [register] AS [r]
+WHERE [r].[Registration_Id] = @__p_0" (0723d8ff)
+2022-03-18T08:59:57.1881817+05:30 0HMG8HTS2G4B7:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [register]
+WHERE [Registration_Id] = @p0;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-03-18T08:59:57.2040802+05:30 0HMG8HTS2G4B7:00000004 [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-18T08:59:57.2042098+05:30 0HMG8HTS2G4B7:00000004 [INF] Executed action "CourseManagementSystem.Controllers.RegisteredController.Unregistered (CourseManagementSystem)" in 104.2831ms (afa2e885)
+2022-03-18T08:59:57.2042383+05:30 0HMG8HTS2G4B7:00000004 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegisteredController.Unregistered (CourseManagementSystem)"' (99874f2b)
+2022-03-18T08:59:57.2043272+05:30 0HMG8HTS2G4B7:00000004 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/Registered/Unregistered/id?id=1 - - - 200 - text/plain;+charset=utf-8 109.4889ms (791a596a)
+2022-03-18T09:00:03.7848291+05:30 0HMG8HTS2G4B7:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Registered/AllCourse - - (ca22a1cb)
+2022-03-18T09:00:03.7853275+05:30 0HMG8HTS2G4B7:00000005 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)"' (500cc934)
+2022-03-18T09:00:03.7858609+05:30 0HMG8HTS2G4B7:00000005 [INF] Route matched with "{action = \"AllCourse\", controller = \"Registered\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllCourse()" on controller "CourseManagementSystem.Controllers.RegisteredController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T09:00:03.7909924+05:30 0HMG8HTS2G4B7:00000005 [INF] Course class called (4e8a56dc)
+2022-03-18T09:00:03.7956503+05:30 0HMG8HTS2G4B7:00000005 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T09:00:03.7967577+05:30 0HMG8HTS2G4B7:00000005 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T09:00:03.8195557+05:30 0HMG8HTS2G4B7:00000005 [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Registration_Id] AS [registered_id], [s].[Student_Name] AS [Name], [s].[Email] AS [email], [c].[Course_Name] AS [courseName], [c].[Course_Duration] AS [courseDuration], [r].[Course_StartDate] AS [start_Date]
+FROM [register] AS [r]
+INNER JOIN [courses] AS [c] ON [r].[Course_Id] = [c].[Course_Id]
+INNER JOIN [students] AS [s] ON [r].[student_ID] = [s].[student_Id]" (0723d8ff)
+2022-03-18T09:00:03.8202154+05:30 0HMG8HTS2G4B7:00000005 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.RegisteredStudentList, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T09:00:03.8206337+05:30 0HMG8HTS2G4B7:00000005 [INF] Executed action "CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)" in 34.68ms (afa2e885)
+2022-03-18T09:00:03.8206981+05:30 0HMG8HTS2G4B7:00000005 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegisteredController.AllCourse (CourseManagementSystem)"' (99874f2b)
+2022-03-18T09:00:03.8208744+05:30 0HMG8HTS2G4B7:00000005 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Registered/AllCourse - - - 200 - application/json;+charset=utf-8 36.0390ms (791a596a)
+2022-03-18T09:39:30.8873351+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-18T09:39:30.8934504+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-18T09:39:30.8955638+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-18T09:39:30.8978407+05:30  [INF] Content root path: "C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem" (b5d60022)
+2022-03-18T09:39:31.8721290+05:30 0HMG8IKD54U4P:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-18T09:39:32.0915621+05:30 0HMG8IKD54U4P:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 227.8919ms (791a596a)
+2022-03-18T09:39:32.2491505+05:30 0HMG8IKD54U4P:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-18T09:39:32.4173153+05:30 0HMG8IKD54U4P:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 168.0894ms (791a596a)
+2022-03-18T09:39:37.0348639+05:30 0HMG8IKD54U4P:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Registration/AllRegistration - - (ca22a1cb)
+2022-03-18T09:39:37.0852261+05:30 0HMG8IKD54U4P:00000004 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegistrationController.AllRegistration (CourseManagementSystem)"' (500cc934)
+2022-03-18T09:39:37.1316823+05:30 0HMG8IKD54U4P:00000004 [INF] Route matched with "{action = \"AllRegistration\", controller = \"Registration\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllRegistration()" on controller "CourseManagementSystem.Controllers.RegistrationController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T09:39:37.6607998+05:30 0HMG8IKD54U4P:00000004 [INF] Course class called (4e8a56dc)
+2022-03-18T09:39:37.6651508+05:30 0HMG8IKD54U4P:00000004 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T09:39:38.3173100+05:30 0HMG8IKD54U4P:00000004 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T09:39:39.6230112+05:30 0HMG8IKD54U4P:00000004 [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Registration_Id] AS [registered_id], [s].[Student_Name] AS [Name], [s].[Email] AS [email], [c].[Course_Name] AS [courseName], [c].[Course_Duration] AS [courseDuration], [r].[Course_StartDate] AS [start_Date]
+FROM [register] AS [r]
+INNER JOIN [courses] AS [c] ON [r].[Course_Id] = [c].[Course_Id]
+INNER JOIN [students] AS [s] ON [r].[student_ID] = [s].[student_Id]" (0723d8ff)
+2022-03-18T09:39:39.6462869+05:30 0HMG8IKD54U4P:00000004 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.RegisteredStudentList, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T09:39:39.6602485+05:30 0HMG8IKD54U4P:00000004 [INF] Executed action "CourseManagementSystem.Controllers.RegistrationController.AllRegistration (CourseManagementSystem)" in 2522.6411ms (afa2e885)
+2022-03-18T09:39:39.6604163+05:30 0HMG8IKD54U4P:00000004 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegistrationController.AllRegistration (CourseManagementSystem)"' (99874f2b)
+2022-03-18T09:39:39.6649111+05:30 0HMG8IKD54U4P:00000004 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Registration/AllRegistration - - - 200 - application/json;+charset=utf-8 2630.0366ms (791a596a)
+2022-03-18T09:39:59.9598773+05:30 0HMG8IKD54U4P:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Registration/NewRegistration application/json 82 (ca22a1cb)
+2022-03-18T09:39:59.9625408+05:30 0HMG8IKD54U4P:00000005 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegistrationController.NewRegistration (CourseManagementSystem)"' (500cc934)
+2022-03-18T09:39:59.9810849+05:30 0HMG8IKD54U4P:00000005 [INF] Route matched with "{action = \"NewRegistration\", controller = \"Registration\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult NewRegistration(CourseManagementSystem.DomainLayer.Registration)" on controller "CourseManagementSystem.Controllers.RegistrationController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T09:39:59.9870484+05:30 0HMG8IKD54U4P:00000005 [INF] Course class called (4e8a56dc)
+2022-03-18T09:40:00.0273333+05:30 0HMG8IKD54U4P:00000005 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T09:40:00.0645700+05:30 0HMG8IKD54U4P:00000005 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T09:40:00.2641811+05:30 0HMG8IKD54U4P:00000005 [INF] Executed DbCommand ("26"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [register] ([Registration_Id], [Course_Id], [Course_StartDate], [student_ID])
+VALUES (@p0, @p1, @p2, @p3);" (0723d8ff)
+2022-03-18T09:40:00.2785940+05:30 0HMG8IKD54U4P:00000005 [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-18T09:40:00.2787882+05:30 0HMG8IKD54U4P:00000005 [INF] Executed action "CourseManagementSystem.Controllers.RegistrationController.NewRegistration (CourseManagementSystem)" in 297.628ms (afa2e885)
+2022-03-18T09:40:00.2788309+05:30 0HMG8IKD54U4P:00000005 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegistrationController.NewRegistration (CourseManagementSystem)"' (99874f2b)
+2022-03-18T09:40:00.2789596+05:30 0HMG8IKD54U4P:00000005 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Registration/NewRegistration application/json 82 - 200 - text/plain;+charset=utf-8 319.1842ms (791a596a)
+2022-03-18T09:40:11.0428912+05:30 0HMG8IKD54U4P:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Registration/AllRegistration - - (ca22a1cb)
+2022-03-18T09:40:11.0433419+05:30 0HMG8IKD54U4P:00000006 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegistrationController.AllRegistration (CourseManagementSystem)"' (500cc934)
+2022-03-18T09:40:11.0438058+05:30 0HMG8IKD54U4P:00000006 [INF] Route matched with "{action = \"AllRegistration\", controller = \"Registration\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllRegistration()" on controller "CourseManagementSystem.Controllers.RegistrationController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T09:40:11.0545837+05:30 0HMG8IKD54U4P:00000006 [INF] Course class called (4e8a56dc)
+2022-03-18T09:40:11.0594989+05:30 0HMG8IKD54U4P:00000006 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T09:40:11.0828509+05:30 0HMG8IKD54U4P:00000006 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T09:40:11.1017162+05:30 0HMG8IKD54U4P:00000006 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Registration_Id] AS [registered_id], [s].[Student_Name] AS [Name], [s].[Email] AS [email], [c].[Course_Name] AS [courseName], [c].[Course_Duration] AS [courseDuration], [r].[Course_StartDate] AS [start_Date]
+FROM [register] AS [r]
+INNER JOIN [courses] AS [c] ON [r].[Course_Id] = [c].[Course_Id]
+INNER JOIN [students] AS [s] ON [r].[student_ID] = [s].[student_Id]" (0723d8ff)
+2022-03-18T09:40:11.1022147+05:30 0HMG8IKD54U4P:00000006 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.RegisteredStudentList, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T09:40:11.1027030+05:30 0HMG8IKD54U4P:00000006 [INF] Executed action "CourseManagementSystem.Controllers.RegistrationController.AllRegistration (CourseManagementSystem)" in 58.8048ms (afa2e885)
+2022-03-18T09:40:11.1027717+05:30 0HMG8IKD54U4P:00000006 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegistrationController.AllRegistration (CourseManagementSystem)"' (99874f2b)
+2022-03-18T09:40:11.1029515+05:30 0HMG8IKD54U4P:00000006 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Registration/AllRegistration - - - 200 - application/json;+charset=utf-8 60.0834ms (791a596a)
+2022-03-18T09:40:29.4465832+05:30 0HMG8IKD54U4P:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-18T09:40:29.4497163+05:30 0HMG8IKD54U4P:00000007 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 2.8486ms (791a596a)
+2022-03-18T09:40:29.7531923+05:30 0HMG8IKD54U4P:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-18T09:40:29.7560889+05:30 0HMG8IKD54U4Q:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - - (ca22a1cb)
+2022-03-18T09:40:29.7584552+05:30 0HMG8IKD54U4P:00000008 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.2703ms (791a596a)
+2022-03-18T09:40:29.8659132+05:30 0HMG8IKD54U4Q:00000002 [INF] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' (27b0a520)
+2022-03-18T09:40:29.8662455+05:30 0HMG8IKD54U4Q:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - - - 200 628 image/png 110.0191ms (791a596a)
+2022-03-18T09:40:42.2037470+05:30 0HMG8IKD54U4Q:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Registration/AllRegistration - - (ca22a1cb)
+2022-03-18T09:40:42.2040773+05:30 0HMG8IKD54U4Q:00000003 [INF] Executing endpoint '"CourseManagementSystem.Controllers.RegistrationController.AllRegistration (CourseManagementSystem)"' (500cc934)
+2022-03-18T09:40:42.2043591+05:30 0HMG8IKD54U4Q:00000003 [INF] Route matched with "{action = \"AllRegistration\", controller = \"Registration\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AllRegistration()" on controller "CourseManagementSystem.Controllers.RegistrationController" ("CourseManagementSystem"). (122b2fdf)
+2022-03-18T09:40:42.2092941+05:30 0HMG8IKD54U4Q:00000003 [INF] Course class called (4e8a56dc)
+2022-03-18T09:40:42.2140281+05:30 0HMG8IKD54U4Q:00000003 [INF] Course Endpoint start (d4fc660b)
+2022-03-18T09:40:42.2152575+05:30 0HMG8IKD54U4Q:00000003 [INF] Entity Framework Core "5.0.15" initialized '"CourseDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-18T09:40:42.2252312+05:30 0HMG8IKD54U4Q:00000003 [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Registration_Id] AS [registered_id], [s].[Student_Name] AS [Name], [s].[Email] AS [email], [c].[Course_Name] AS [courseName], [c].[Course_Duration] AS [courseDuration], [r].[Course_StartDate] AS [start_Date]
+FROM [register] AS [r]
+INNER JOIN [courses] AS [c] ON [r].[Course_Id] = [c].[Course_Id]
+INNER JOIN [students] AS [s] ON [r].[student_ID] = [s].[student_Id]" (0723d8ff)
+2022-03-18T09:40:42.2256345+05:30 0HMG8IKD54U4Q:00000003 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[CourseManagementSystem.DomainLayer.RegisteredStudentList, CourseManagementSystem.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-18T09:40:42.2258938+05:30 0HMG8IKD54U4Q:00000003 [INF] Executed action "CourseManagementSystem.Controllers.RegistrationController.AllRegistration (CourseManagementSystem)" in 21.4331ms (afa2e885)
+2022-03-18T09:40:42.2259778+05:30 0HMG8IKD54U4Q:00000003 [INF] Executed endpoint '"CourseManagementSystem.Controllers.RegistrationController.AllRegistration (CourseManagementSystem)"' (99874f2b)
+2022-03-18T09:40:42.2261961+05:30 0HMG8IKD54U4Q:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Registration/AllRegistration - - - 200 - application/json;+charset=utf-8 22.4971ms (791a596a)

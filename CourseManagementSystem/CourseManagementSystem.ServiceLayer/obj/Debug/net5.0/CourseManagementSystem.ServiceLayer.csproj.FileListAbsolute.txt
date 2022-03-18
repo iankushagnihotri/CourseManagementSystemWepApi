@@ -1,0 +1,17 @@
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.ServiceLayer\bin\Debug\net5.0\CourseManagementSystem.ServiceLayer.deps.json
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.ServiceLayer\bin\Debug\net5.0\CourseManagementSystem.ServiceLayer.dll
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.ServiceLayer\bin\Debug\net5.0\ref\CourseManagementSystem.ServiceLayer.dll
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.ServiceLayer\bin\Debug\net5.0\CourseManagementSystem.ServiceLayer.pdb
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.ServiceLayer\bin\Debug\net5.0\CourseManagementSystem.DomainLayer.dll
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.ServiceLayer\bin\Debug\net5.0\CourseManagementSystem.RepositoryLayer.dll
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.ServiceLayer\bin\Debug\net5.0\CourseManagementSystem.RepositoryLayer.pdb
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.ServiceLayer\bin\Debug\net5.0\CourseManagementSystem.DomainLayer.pdb
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.ServiceLayer\obj\Debug\net5.0\CourseManagementSystem.ServiceLayer.csproj.AssemblyReference.cache
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.ServiceLayer\obj\Debug\net5.0\CourseManagementSystem.ServiceLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.ServiceLayer\obj\Debug\net5.0\CourseManagementSystem.ServiceLayer.AssemblyInfoInputs.cache
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.ServiceLayer\obj\Debug\net5.0\CourseManagementSystem.ServiceLayer.AssemblyInfo.cs
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.ServiceLayer\obj\Debug\net5.0\CourseManagementSystem.ServiceLayer.csproj.CoreCompileInputs.cache
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.ServiceLayer\obj\Debug\net5.0\CourseManagementSystem.ServiceLayer.csproj.CopyComplete
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.ServiceLayer\obj\Debug\net5.0\CourseManagementSystem.ServiceLayer.dll
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.ServiceLayer\obj\Debug\net5.0\ref\CourseManagementSystem.ServiceLayer.dll
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.ServiceLayer\obj\Debug\net5.0\CourseManagementSystem.ServiceLayer.pdb

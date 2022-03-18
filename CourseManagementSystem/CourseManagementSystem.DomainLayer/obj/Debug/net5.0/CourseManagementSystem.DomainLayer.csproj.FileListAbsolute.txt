@@ -1,0 +1,12 @@
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.DomainLayer\bin\Debug\net5.0\CourseManagementSystem.DomainLayer.deps.json
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.DomainLayer\bin\Debug\net5.0\CourseManagementSystem.DomainLayer.dll
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.DomainLayer\bin\Debug\net5.0\ref\CourseManagementSystem.DomainLayer.dll
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.DomainLayer\bin\Debug\net5.0\CourseManagementSystem.DomainLayer.pdb
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.DomainLayer\obj\Debug\net5.0\CourseManagementSystem.DomainLayer.csproj.AssemblyReference.cache
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.DomainLayer\obj\Debug\net5.0\CourseManagementSystem.DomainLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.DomainLayer\obj\Debug\net5.0\CourseManagementSystem.DomainLayer.AssemblyInfoInputs.cache
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.DomainLayer\obj\Debug\net5.0\CourseManagementSystem.DomainLayer.AssemblyInfo.cs
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.DomainLayer\obj\Debug\net5.0\CourseManagementSystem.DomainLayer.csproj.CoreCompileInputs.cache
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.DomainLayer\obj\Debug\net5.0\CourseManagementSystem.DomainLayer.dll
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.DomainLayer\obj\Debug\net5.0\ref\CourseManagementSystem.DomainLayer.dll
+C:\Users\91836\source\repos\Poject\CourseManagementSystem\CourseManagementSystem.DomainLayer\obj\Debug\net5.0\CourseManagementSystem.DomainLayer.pdb
